@@ -37,7 +37,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="index.html"
+                href="index.php"
                 style="
                   color: darkgoldenrod;
                   font-family: 'Times New Roman', Times, serif;
@@ -48,7 +48,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="About.html"
+                href="About.php"
                 style="
                   color: darkgoldenrod;
                   font-family: 'Times New Roman', Times, serif;
@@ -59,7 +59,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="Rooms.html"
+                href="Rooms.php"
                 style="
                   color: darkgoldenrod;
                   font-family: 'Times New Roman', Times, serif;
@@ -70,7 +70,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="Restaurant.html"
+                href="Restaurant.php"
                 style="
                   color: darkgoldenrod;
                   font-family: 'Times New Roman', Times, serif;
@@ -81,7 +81,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="Book Now.html"
+                href="Book Now.php"
                 style="
                   color: darkgoldenrod;
                   font-family: 'Times New Roman', Times, serif;
@@ -103,7 +103,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="Contact.html"
+                href="Contact.php"
                 style="
                   color: darkgoldenrod;
                   font-family: 'Times New Roman', Times, serif;
