@@ -43,25 +43,25 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto ">
         <li class="nav-item">
-          <a class="nav-link " href="index.html" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">HOME</a>
+          <a class="nav-link " href="index.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="About.html" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">ABOUT</a>
+          <a class="nav-link" href="About.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Rooms.html" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">ROOMS</a>
+          <a class="nav-link" href="Rooms.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">ROOMS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Restaurant.html" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">RESTAURANT</a>
+          <a class="nav-link" href="Restaurant.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">RESTAURANT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Book Now.html" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">BOOK NOW</a>
+          <a class="nav-link" href="Book Now.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">BOOK NOW</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">GALLERY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Contact.html"style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">CONTACT</a>
+          <a class="nav-link" href="Contact.php"style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">CONTACT</a>
         </li>
       </ul>  
     </div>
