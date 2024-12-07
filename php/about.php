@@ -18,8 +18,9 @@
           </button>
           <?php
             require_once 'functions/navbar.php';
-
-             navigationbar();
+              addLogo();
+              addToggleButton();
+              navigationbar();
           ?>
         </div>
       </nav> 
