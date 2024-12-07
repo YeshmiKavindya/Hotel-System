@@ -26,3 +26,12 @@ div h5{
 	height: 40px;
 
 }
+.navbar a {
+    display: block;
+    color: black;
+    justify-items: right;
+    font-weight: 900;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
