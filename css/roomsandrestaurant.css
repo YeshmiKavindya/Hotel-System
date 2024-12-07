@@ -1,0 +1,18 @@
+body {
+    background-image: url(../images/36.jpg);
+    background-size: cover;
+    position: relative;
+    height: auto;
+    margin: 1em;
+  }
+  .booking_form {
+    border-style: solid;
+    padding: 5vh;
+    margin: 5em;
+    border-radius: 2px;
+  }
+  label {
+    color: black;
+    font-weight: bolder;
+  }
+  
