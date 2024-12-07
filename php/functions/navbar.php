@@ -27,4 +27,8 @@
         echo "</div>";
 
     }
+
+    function addLogo(){
+        
+    }
 ?>
