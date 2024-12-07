@@ -32,4 +32,8 @@
         echo "<img class='logo' src='../logo.PNG' >";
         echo "<a class='navbar-brand' href='#' style='color:goldenrod;font-style: italic;'>Yarrow Heights Hotel</a>";
     }
+
+    function addToggleButton(){
+        
+    }
 ?>
