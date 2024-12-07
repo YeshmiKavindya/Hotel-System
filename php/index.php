@@ -40,31 +40,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto ">
-        <li class="nav-item">
-          <a class="nav-link " href="index.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="About.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Rooms.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">ROOMS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Restaurant.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">RESTAURANT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Book Now.php" style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">BOOK NOW</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">GALLERY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Contact.php"style="color: darkgoldenrod;font-family: 'Times New Roman', Times,serif">CONTACT</a>
-        </li>
-      </ul>  
-    </div>
+    <>
   </div>
 </nav>
 
