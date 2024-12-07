@@ -9,33 +9,18 @@
     <link rel="stylesheet" type="text/css" href="../css/bookstyle.css" />
   </head>
   <body>
+<!--navigation bar-->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light"
       style="background-color: black"
     >
       <div class="container-fluid">
-        <img class="logo" src="../logo.PNG" />
-        <a
-          class="navbar-brand"
-          href="#"
-          style="color: goldenrod; font-style: italic"
-          >Yarrow Heights Hotel</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        
         <?php
            require_once 'functions/navbar.php';
-
-          navigationbar();
+            addLogo();
+            addToggleButton();
+            navigationbar();
         ?>
       </div>
     </nav>
