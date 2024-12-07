@@ -33,6 +33,7 @@
       </div>
     </nav>
 
+    <div class="fixed-top">
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;">
   <div class="container-fluid">
     <?php
@@ -43,6 +44,7 @@
     ?>
   </div>
 </nav>
+</div>
 
 
 <!--backgroung_image-->
