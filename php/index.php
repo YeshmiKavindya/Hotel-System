@@ -42,6 +42,8 @@
     </button>
     <?php
       require_once 'functions/navbar.php';
+
+      navigationbar();
     ?>
   </div>
 </nav>
