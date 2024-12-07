@@ -1,0 +1,24 @@
+.booking_form {
+    border-style: solid;
+    padding: 5vh;
+    margin: 5em;
+    border-radius: 2px;
+  }
+  body {
+    background-image: url(../images/62.jpg);
+    background-size: cover;
+    position: relative;
+    height: auto;
+    margin: 1em;
+  }
+  label {
+    color: black;
+    font-weight: bolder;
+  }
+  .btn {
+    background-color: burlywood;
+    line-height: 3;
+    border: none;
+    border-radius: 14px;
+  }
+  
