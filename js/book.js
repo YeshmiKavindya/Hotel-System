@@ -51,11 +51,11 @@ function getvalues() {
   console.log(customer);
 
   if (roomsChecked) {
-    window.open("../forms/roomsreservation.html", "_blank");
+    window.open("../forms/roomsreservation.php", "_blank");
   } else if (restChecked) {
-    window.open("../forms/restaurantreservation.html", "_blank");
+    window.open("../forms/restaurantreservation.php", "_blank");
   } else if (weddingHallChecked) {
-    window.open("../forms/weddinghallreservation.html", "_blank");
+    window.open("../forms/weddinghallreservation.php", "_blank");
   } else if (swimmingpoolChecked) {
   } else {
     alert("Please select service type");
