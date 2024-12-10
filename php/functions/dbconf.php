@@ -4,5 +4,6 @@
     define('PASSWORD','mariadb');
     define('DBNAME','hotelsystem');
 
-    
+    $connect=mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DBNAME);
+
 ?>
