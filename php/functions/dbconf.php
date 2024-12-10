@@ -6,4 +6,10 @@
 
     $connect=mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DBNAME);
 
+    if(!$connect){
+		die("connection failed");
+	}else{
+		//echo "connect successfully";
+	}
+
 ?>
