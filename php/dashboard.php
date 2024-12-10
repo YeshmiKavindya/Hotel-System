@@ -9,7 +9,15 @@
 </head>
 <body>
     <div class="row">
-        <div class="col-3"></div>
+        <div class="col-3">
+            <table>
+               
+                    <tr><td>Profile</td></tr>
+                   <tr><td>Rooms Reservation</td></tr> 
+                   <tr><td>Restaurant Reservation</td></tr>
+                   <tr><td>Wedding Hall Reservation</td></tr>
+            </table>
+        </div>
         <div class="col">
             <center><h4 class="tHead">DASHBOARD</h4></center>
             <div class="row">
