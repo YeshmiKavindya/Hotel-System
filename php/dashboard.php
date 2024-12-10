@@ -12,8 +12,16 @@
         <div class="col3"></div>
         <div class="col">
             <center><h4>DASHBOARD</h4></center>
+            <div class="row">
+                <div class="col">
+                    <h5>Rooms Reservation</h5>
+                </div>
+                <div class="col">
+                    <h5>Restaurant Reservation</h5>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
