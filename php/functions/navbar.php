@@ -30,7 +30,7 @@
 
     function addLogo(){
         echo "<img class='logo' src='../logo.PNG' >";
-        echo "<a class='navbar-brand' href='../php/dashborad.php' style='color:goldenrod;font-style: italic;'>Yarrow Heights Hotel</a>";
+        echo "<a class='navbar-brand' href='../php/dashboard.php' style='color:goldenrod;font-style: italic;'>Yarrow Heights Hotel</a>";
     }
 
     function addToggleButton(){
