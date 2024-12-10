@@ -11,9 +11,10 @@
     <div class="row">
         <div class="col-3"></div>
         <div class="col">
-            <center><h4>DASHBOARD</h4></center>
+            <center><h4 class="tHead">DASHBOARD</h4></center>
             <div class="row">
                 <div class="col">
+                    <br>
                     <h5>Rooms Reservation</h5>
                     <table>
                         <thead>
@@ -35,9 +36,35 @@
                             </tr>
                         </tbody>
                     </table>
+                    <br>
+                    <a href="#" class="btn btn-secondary" style="justify-content: center;">Add Reservations</a>
+                    
                 </div>
                 <div class="col">
+                    <br>
                     <h5>Restaurant Reservation</h5>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>RoomsID</th>
+                                <th>CustomerName</th>
+                                <th>CheckIn</th>
+                                <th>CheckOut</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>101</td>
+                                <td>John</td>
+                                <td>10/12/2024</td>
+                                <td>13/12/2024</td>
+                                <td>Confirmed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <a href="#" class="btn btn-secondary" style="justify-content: center;">Add Reservations</a>
                 </div>
             </div>
         </div>
