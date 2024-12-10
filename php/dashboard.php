@@ -7,6 +7,10 @@
     <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="row">
+        <div class="col3"></div>
+        <div class="col"></div>
+    </div>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
