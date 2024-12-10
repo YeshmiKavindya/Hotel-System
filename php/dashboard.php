@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="row">
-        <div class="col3"></div>
+        <div class="col"></div>
         <div class="col">
             <center><h4>DASHBOARD</h4></center>
             <div class="row">
