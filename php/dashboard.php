@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="row">
-        <div class="col"></div>
+        <div class="col-3"></div>
         <div class="col">
             <center><h4>DASHBOARD</h4></center>
             <div class="row">
@@ -25,6 +25,15 @@
                                 <th>Status</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            <tr>
+                                <td>101</td>
+                                <td>John</td>
+                                <td>10/12/2024</td>
+                                <td>13/12/2024</td>
+                                <td>Confirmed</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="col">
