@@ -15,6 +15,17 @@
             <div class="row">
                 <div class="col">
                     <h5>Rooms Reservation</h5>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>RoomsID</th>
+                                <th>CustomerName</th>
+                                <th>CheckIn</th>
+                                <th>CheckOut</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                    </table>
                 </div>
                 <div class="col">
                     <h5>Restaurant Reservation</h5>
