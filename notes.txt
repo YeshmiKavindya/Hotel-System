@@ -1,1 +1,100 @@
 https://special-journey-q7qv7r5wxv4r3w7w.github.dev/
+-- Create database
+CREATE DATABASE RoomRestaurantManagement;
+
+-- Use the created database
+USE RoomRestaurantManagement;
+
+-- Create Customers table
+CREATE TABLE Customers (
+    CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Phone VARCHAR(20),
+    Address TEXT
+);
+
+-- Create Rooms table
+CREATE TABLE Rooms (
+    RoomID INT AUTO_INCREMENT PRIMARY KEY,
+    RoomType VARCHAR(50) NOT NULL,
+    PricePerNight DECIMAL(10, 2) NOT NULL,
+    Capacity INT NOT NULL,
+    Status VARCHAR(20) DEFAULT 'Available'
+);
+
+-- Create Reservations table
+CREATE TABLE Reservations (
+    ReservationID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT NOT NULL,
+    RoomID INT NOT NULL,
+    CheckInDate DATE NOT NULL,
+    CheckOutDate DATE NOT NULL,
+    TotalAmount DECIMAL(10, 2) NOT NULL,
+    PaymentStatus VARCHAR(20) DEFAULT 'Unpaid',
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
+);
+
+-- Create Restaurant Tables table
+CREATE TABLE RestaurantTables (
+    TableID INT AUTO_INCREMENT PRIMARY KEY,
+    TableNumber INT NOT NULL,
+    Capacity INT NOT NULL,
+    Status VARCHAR(20) DEFAULT 'Available'
+);
+
+-- Create Menu Items table
+CREATE TABLE MenuItems (
+    MenuItemID INT AUTO_INCREMENT PRIMARY KEY,
+    ItemName VARCHAR(100) NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    Category VARCHAR(50)
+);
+
+-- Create Orders table
+CREATE TABLE Orders (
+    OrderID INT AUTO_INCREMENT PRIMARY KEY,
+    TableID INT NOT NULL,
+    CustomerID INT NOT NULL,
+    OrderDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+    TotalAmount DECIMAL(10, 2) NOT NULL,
+    PaymentStatus VARCHAR(20) DEFAULT 'Unpaid',
+    FOREIGN KEY (TableID) REFERENCES RestaurantTables(TableID),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+-- Create Order Details table
+CREATE TABLE OrderDetails (
+    OrderDetailID INT AUTO_INCREMENT PRIMARY KEY,
+    OrderID INT NOT NULL,
+    MenuItemID INT NOT NULL,
+    Quantity INT NOT NULL,
+    SubTotal DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (MenuItemID) REFERENCES MenuItems(MenuItemID)
+);
+
+-- Create Employees table
+CREATE TABLE Employees (
+    EmployeeID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Role VARCHAR(50) NOT NULL,
+    ContactNumber VARCHAR(20)
+);
+
+-- Create Payments table
+CREATE TABLE Payments (
+    PaymentID INT AUTO_INCREMENT PRIMARY KEY,
+    PaymentType VARCHAR(50) NOT NULL,
+    PaymentDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+    Amount DECIMAL(10, 2) NOT NULL,
+    CustomerID INT NOT NULL,
+    ReservationID INT,
+    OrderID INT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (ReservationID) REFERENCES Reservations(ReservationID),
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+);
