@@ -49,12 +49,12 @@
 
 
 <!--backgroung_image-->
-<div><p><?php
-  //require_once 'functions/navbar.php';
+<?php
   require_once 'functions/dbconf.php';
-  
-  //image(1,4,7,$connect);
-?></p></div>
+  require_once 'functions/imageadd.php';
+
+  addImage(10,8,9,$connect);
+?>
 
 <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
