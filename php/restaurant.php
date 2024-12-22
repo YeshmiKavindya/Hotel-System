@@ -160,7 +160,7 @@
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
             <h5 class="card-title">Chinese Cuisine</h5>
-            
+
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -237,47 +237,15 @@
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
             <h5 class="card-title">Indian Cuisine</h5>
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../images/74.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/78.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/82.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            <!-- add image -->
+            <div><?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(27,31,35,$connect);
+
+            ?></div>
+            
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
@@ -339,47 +307,15 @@
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
             <h5 class="card-title">Italian Cuisine</h5>
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../images/86.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/84.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/87.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            <!-- add image -->
+            <div><?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(39,37,40,$connect);
+
+            ?></div>
+           
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
@@ -445,47 +381,15 @@
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
             <h5 class="card-title">Japanese Cuisine</h5>
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../images/86.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/80.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/88.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            <!-- add image -->
+            <div><?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(39,33,41,$connect);
+
+            ?></div>
+            
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
@@ -547,47 +451,15 @@
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
             <h5 class="card-title">French Cuisine</h5>
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../images/82.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/76.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/81.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            <!-- add image -->
+            <div><?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(35,29,34,$connect);
+
+            ?></div>
+            
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
@@ -653,47 +525,14 @@
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
             <h5 class="card-title">Thai Cuisine</h5>
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../images/88.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/75.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/82.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            <!-- add image -->
+            <div><?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(41,28,35,$connect);
+
+            ?></div>
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
@@ -754,47 +593,15 @@
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
             <h5 class="card-title">American Cuisine</h5>
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../images/74.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/88.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/77.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            <!-- add image -->
+            <div><?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(27,41,30,$connect);
+
+            ?></div>
+            
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
