@@ -44,10 +44,10 @@
             <div class="card-body" style="font-family: 'Times New Roman';background-color: #F3F3e0;">
               <h5 class="card-title">Classic Comfort Package</h5>
               <?php
-                //require_once 'functions/dbconf.php';
+                require_once 'functions/dbconf.php';
                 require_once 'functions/imageadd.php';
 
-                addImage(20,17,23);
+                addImage(20,17,23,$connect);
 
               ?>
 
@@ -74,27 +74,14 @@
           <div class="card">
             <div class="card-body" style="font-family: 'Times New Roman';background-color: #F3F3e0;">
               <h5 class="card-title">Romantic Getaway Package</h5>
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../images/71.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/68.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/60.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                </div>
+              <?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(24,22,14,$connect);
+
+              ?>
+              
               <p class="card-text">Ideal for: Couples celebrating special occasions</p>
               <ul>
                 <li>Room Type: Deluxe Suite with private balcony and city views</li>
@@ -120,27 +107,14 @@
           <div class="card" >
             <div class="card-body" style="font-family: 'Times New Roman';background-color: #F3F3e0;">
               <h5 class="card-title">Family Fun Package</h5>
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../images/11.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/64.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/9.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+              <?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(3,18,2,$connect);
+
+              ?>
+              
               <p class="card-text">Ideal for: Families looking for a convenient and comfortable stay</p>
               <ul>
                 <li>Room Type: Family Suite with extra beds and a spacious living area</li>
@@ -164,27 +138,13 @@
           <div class="card">
             <div class="card-body" style="font-family: 'Times New Roman';background-color: #F3F3e0;">
               <h5 class="card-title">Executive Package</h5>
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../images/72.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/73.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/65.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                </div>
+              <?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(25,26,19,$connect);
+
+              ?>
 
               <p class="card-text">Ideal for: Business travelers seeking convenience and efficiency.</p>
               <ul>
@@ -210,27 +170,14 @@
           <div class="card">
             <div class="card-body" style="font-family: 'Times New Roman';background-color: #F3F3e0;">
               <h5 class="card-title" style="text-align: center;">Wellness Retreat Package</h5>
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../images/9.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/63.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/69.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                </div>
+              <?php
+                require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(2,17,43,$connect);
+
+              ?>
+           
               <p class="card-text">Ideal for: Guests looking to relax and recharge</p>
               <ul>
                 <li>Room Type: Deluxe Suite with garden views</li>
