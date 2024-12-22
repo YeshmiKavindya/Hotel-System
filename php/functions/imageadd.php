@@ -1,6 +1,6 @@
 <?php
 
-function addImage($id1, $id2, $id3){
+function addImage($id1, $id2, $id3,$connect){
     
   
 
