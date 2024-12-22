@@ -1,7 +1,9 @@
 <?php
 
-function addImage($id1, $id2, $id3,$connect){
-    
+function addImage($id1, $id2, $id3){
+  
+  require_once 'dbconf.php';
+
   $sql = "SELECT file_path FROM images WHERE imageID IN ($id1, $id2, $id3)";
   $result = mysqli_query($connect, $sql);
 

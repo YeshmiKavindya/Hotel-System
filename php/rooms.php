@@ -43,27 +43,15 @@
           <div class="card">
             <div class="card-body" style="font-family: 'Times New Roman';background-color: #F3F3e0;">
               <h5 class="card-title">Classic Comfort Package</h5>
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../images/66.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/63.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/70.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+              <?php
+                //require_once 'functions/dbconf.php';
+                require_once 'functions/imageadd.php';
+
+                addImage(20,17,23);
+
+              ?>
+
+              
               <p class="card-text">Ideal for: Solo travelers and budget-conscious guests</p>
                 <ul>
                     <li>Room Type: Standard Room with city or garden views</li>
