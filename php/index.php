@@ -49,8 +49,14 @@
 
 
 <!--backgroung_image-->
+<div><p><?php
+  //require_once 'functions/navbar.php';
+  require_once 'functions/dbconf.php';
+  
+  //image(1,4,7,$connect);
+?></p></div>
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../images/49.jpg" class="d-block w-100" alt="...">
@@ -71,7 +77,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 
-</div>
+</div> -->
 
 
 <div class="card text-center" style=" background-color: #FFDBB5;font-family: 'Times New Roman', Times,serif;border-radius: 0%;" >
