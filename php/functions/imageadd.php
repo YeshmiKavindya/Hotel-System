@@ -42,6 +42,6 @@ function addImage($id1, $id2, $id3,$connect){
   }
 
 
-  mysqli_close($connect);
+  
 }
 ?>
