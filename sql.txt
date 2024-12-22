@@ -1,4 +1,7 @@
-create database hotelsystem;
+
 apache2ctl start
 mysql -h 127.0.0.0 -P 3306 -u root -p
+mariadb
+create database hotelsystem;
+exit;
 mysql -h 127.0.0.0 -P 3306 -u root -p hotelsystem < hotelsystem.sql
