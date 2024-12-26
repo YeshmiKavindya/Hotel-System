@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="../css/signin.css">
-    <title>Signin</title>
+    <title>Signup</title>
 </head>
 <body>
 
@@ -30,9 +30,10 @@
                         <label for="password">Password</label>
                         <input type="password" class="form-control"  name="password" id="pword" required/>
                     </div>
+                    <br>
                     <div>
                         <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" class="form-control"  name="confirmpassword" id="pword" required/>
+                        <input type="password" class="form-control"  name="password" id="pword" required/>
                     </div>
                     <div>
                         <input type="checkbox" class="form-check-input" name=""  onclick="show()">
@@ -42,7 +43,7 @@
                     <br>
 
                     <div class="d-grid gap-2 col-4 mx-auto">
-                        <input type="submit" name="submit" value="Sign in" class="form-control">
+                        <input type="submit" name="submit" value="Sign up" class="form-control">
                     </div>
 
                 </form>
@@ -53,11 +54,14 @@
 
         <script type="text/javascript">
             function show(){
-                var input = document.getElementById('pword')
-                if(input.type == "password"){
-                    input.type='text'
+                var input1 = document.getElementById('pword1')
+                var input2 = documnet.getElementById('pword2')
+                if(input1.type == "password" && input2.type == "password"){
+                    input1.type='text'
+                    input2.type = "text"
                 }else{
-                    input.type='password'
+                    input1.type='password'
+                    input2.type="password"
                 }
 
             }
