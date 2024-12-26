@@ -35,7 +35,7 @@
                     <div class="d-grid gap-2 col-4 mx-auto">
                         <input type="submit" name="submit" value="Sign in" class="form-control">
                     </div>
-                    <center><label for="signup"><a href="">Forgot Password | </a><a href="">create a account</a></label></center>   
+                    <center><label for="signup"><a href="">Forgot Password | </a><a href="signup.php">create a account</a></label></center>   
 
                 </form>
             </div>
