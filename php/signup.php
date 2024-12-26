@@ -28,7 +28,7 @@
                     <br>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" class="form-control"  name="password" id="pword1" required/>
+                        <input type="password" class="form-control"  name="password" id="pword" required/>
                     </div>
                     <br>
                     <div>
@@ -54,14 +54,14 @@
 
         <script type="text/javascript">
             function show(){
-                var input1 = document.getElementById('pword1')
+                var input1 = document.getElementById('pword')
                 var input2 = documnet.getElementById('pword2')
-                if(input1.type == "password" && input2.type == "password"){
+                if(input1.type == "password" ){
                     input1.type='text'
-                    input2.type = "text"
+                    //input2.type = "text"
                 }else{
                     input1.type='password'
-                    input2.type="password"
+                    //input2.type="password"
                 }
 
             }
