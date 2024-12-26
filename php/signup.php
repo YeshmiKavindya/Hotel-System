@@ -49,6 +49,10 @@
                 </form>
             </div>
         </div>
+
+        <?php
+            require_once '../dbconf.php' ;
+        ?>
     
     
 
