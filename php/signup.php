@@ -26,6 +26,11 @@
                         <input type="email" class="form-control" name="email" required/>
                     </div>
                     <br>
+                    <div >
+                        <label for="phone">PhoneNo</label>
+                        <input type="text" class="form-control" name="phone" required/>
+                    </div>
+                    <br>
                     <div>
                         <label for="password">Password</label>
                         <input type="password" class="form-control"  name="password" id="pword" required/>
@@ -60,13 +65,14 @@
             if(isset($_POST['submit'])){
                 $username = $_POST['username'];
                 $email = $_POST['email'];
+                $phone = $_POST['phone'];
                 $password = $_POST['password'];
                 $confpassword = $_POST['confpassword'];
 
                 if($password == $confpassword){
                     $hash = password_hash($password,PASSWORD_DEFAULT);
 
-                    $sql = 
+                    // $sql = 
                 }
             }
         ?>
