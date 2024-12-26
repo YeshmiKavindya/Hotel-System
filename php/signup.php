@@ -23,7 +23,7 @@
                     <br>
                     <div >
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email"required/>
+                        <input type="email" class="form-control" name="email" required/>
                     </div>
                     <br>
                     <div>
@@ -33,14 +33,18 @@
                     <br>
                     <div>
                         <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" class="form-control"  name="password" id="confpword" required/>
+                        <input type="password" class="form-control"  name="confpassword" id="confpword" required/>
                     </div>
                     <div>
                         <input type="checkbox" class="form-check-input" name=""  onclick="show()">
                         <label for="showpassword" style="font-weight:bold;">show password</label>
                     </div>
-                    
                     <br>
+                    <div>
+                        <label for="msg">
+
+                        </label>
+                    </div>
 
                     <div class="d-grid gap-2 col-4 mx-auto">
                         <input type="submit" name="submit" value="Sign up" class="form-control">
@@ -52,6 +56,19 @@
 
         <?php
             require_once '../dbconf.php' ;
+
+            if(isset($_POST['submit'])){
+                $username = $_POST['username'];
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $confpassword = $_POST['confpassword'];
+
+                if($password == $confpassword){
+                    $hash = password_hash($password,PASSWORD_DEFAULT);
+
+                    $sql = 
+                }
+            }
         ?>
     
     
