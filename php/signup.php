@@ -72,7 +72,9 @@
                 if($password == $confpassword){
                     $hash = password_hash($password,PASSWORD_DEFAULT);
 
-                    // $sql = 
+                    $sql = "INSERT INTO Customers (name,email,phone,password) VALUES ('$username','$email','$phone','$hash')";
+
+                    $result = mysqli_query($connect,$sql);
                 }
             }
         ?>
