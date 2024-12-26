@@ -33,7 +33,7 @@
                     <br>
                     <div>
                         <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" class="form-control"  name="password" id="pword2" required/>
+                        <input type="password" class="form-control"  name="password" id="confpword" required/>
                     </div>
                     <div>
                         <input type="checkbox" class="form-check-input" name=""  onclick="show()">
@@ -54,14 +54,18 @@
 
         <script type="text/javascript">
             function show(){
-                var input1 = document.getElementById('pword')
-                var input2 = documnet.getElementById('pword2')
-                if(input1.type == "password" ){
+                var input = document.getElementById('pword')
+                if(input.type == "password"){
+                    input.type='text'
+                }else{
+                    input.type='password'
+                }
+
+                var input1=document.getElementById('confpword')
+                if(input1.type == "password"){
                     input1.type='text'
-                    //input2.type = "text"
                 }else{
                     input1.type='password'
-                    //input2.type="password"
                 }
 
             }
