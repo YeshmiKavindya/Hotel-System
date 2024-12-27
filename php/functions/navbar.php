@@ -23,11 +23,11 @@
             echo "<li class='nav-item'>";
                 echo "<a class='nav-link ' href='../php/contact.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>CONTACT</a>";
             echo "</li>";
-            echo "<li class='nav-item' style='border:4px solid darkgoldenrod;margin:1px;border-radius: 10px;'>";
-                echo "<a class='nav-link ' href='../php/signin.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>SIGNIN</a>";
+            echo "<li class='nav-item' style='margin:2px;padding:1px'>";
+                echo "<button type='button' class='btn btn-outline-warning' id='signin'>SIGNIN</button>";
             echo "</li>";
-            echo "<li class='nav-item' style='border:4px solid darkgoldenrod;margin:1px;border-radius: 10px;background-color: #D2B48C;'> ";
-                echo "<a class='nav-link ' href='../php/signup.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>SIGNUP</a>";
+            echo "<li class='nav-item' style='margin:2px;'> ";
+                echo "<button type='button' class='btn btn-warning' id='signup'>SIGNUP</button>";
             echo "</li>";
         echo "</ul>";
         echo "</div>";
