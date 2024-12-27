@@ -39,9 +39,6 @@ CREATE TABLE `customers` (
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`customerID`, `name`, `email`, `phone`, `password`) VALUES
-(1, 'Yasas Ferreira', 'yasas@gmail.com', '0712345678', '$2y$10$sCXdWnHtLxE5vNZeQtYFHO9d8d41ZwS5YtoHEaIQaUNjkUcJRiEJG '),
-(2, 'Yeshmi', 'yeshmi@gmail.com', '071245678', '$2y$10$jlc/eaLeETfPx0QUVNyl3emO5jjbyOHfs598GBdT5wZ8VTaov/bfe');
 
 -- --------------------------------------------------------
 
