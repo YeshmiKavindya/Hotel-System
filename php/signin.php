@@ -57,9 +57,15 @@
                 $hash = $row['password'];
 
                 if(password_verify($password,$hash)){
-                    echo 
+                    echo "<script>
+                            document.getElementById('loginForm').reset();
+                            window.location.href = 'dashboard.php';
+                        </script>";
                 }else{
-                    echo"Try Again";
+                    echo "<script>
+                            alert('Password is incorrect! Try Again');
+                            document.getElementById('loginForm').reset();
+                        </script>";
                 }
             }
             }catch(Exception $e)
