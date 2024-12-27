@@ -59,7 +59,8 @@
                 if(password_verify($password,$hash)){
                     echo "<script>
                             document.getElementById('loginForm').reset();
-                            window.open('dashbord.php', '_blank');   
+                            window.open('../php/dashboard.php', '_blank');  
+                            window.location.href = 'index.php'; 
                         </script>";
                 }else{
                     echo "<script>
