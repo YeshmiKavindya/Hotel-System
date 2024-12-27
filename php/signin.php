@@ -44,7 +44,7 @@
         <?php
 
             require_once '../php/functions/dbconf.php';
-            
+
             try{if(isset($_POST['submit'])){
                 $email = $_POST['username'];
                 $password = $_POST['password'];
@@ -56,7 +56,11 @@
                 $row = mysqli_fetch_assoc($result);
                 $hash = $row['password'];
 
-                echo "$hash";
+                if(password_verify($password,$hash)){
+                    echo 
+                }else{
+                    echo"Try Again";
+                }
             }
             }catch(Exception $e)
             {}
