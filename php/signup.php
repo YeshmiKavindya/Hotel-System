@@ -80,8 +80,9 @@
                         echo "<script>
                             alert('Registered Successfully!');
                             document.getElementById('loginForm').reset();
-                            
+                            window.location.href = 'signin.php';
                         </script>";
+                        
                     }else{
 
                         echo "<script>
