@@ -23,10 +23,10 @@
             echo "<li class='nav-item'>";
                 echo "<a class='nav-link ' href='../php/contact.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>CONTACT</a>";
             echo "</li>";
-            echo "<li class='nav-item'>";
+            echo "<li class='nav-item' style='border:4px solid darkgoldenrod;margin:1px;border-radius: 10px;'>";
                 echo "<a class='nav-link ' href='../php/signin.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>SIGNIN</a>";
             echo "</li>";
-            echo "<li class='nav-item'>";
+            echo "<li class='nav-item' style='border:4px solid darkgoldenrod;margin:1px;border-radius: 10px;background-color: #D2B48C;'> ";
                 echo "<a class='nav-link ' href='../php/signup.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>SIGNUP</a>";
             echo "</li>";
         echo "</ul>";
