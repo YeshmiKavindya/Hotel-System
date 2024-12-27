@@ -60,7 +60,7 @@
         </div>
 
         <?php
-            require_once '../dbconf.php' ;
+            require_once '../php/functions/dbconf.php' ;
 
             if(isset($_POST['submit'])){
                 $username = $_POST['username'];
