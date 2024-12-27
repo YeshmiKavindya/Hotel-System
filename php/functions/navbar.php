@@ -24,11 +24,11 @@
                 echo "<a class='nav-link ' href='../php/contact.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>CONTACT</a>";
             echo "</li>";
             echo "<li class='nav-item' style='margin:2px;padding:1px'>";
-               // echo "<button type='button' class='btn btn-outline-warning' id='signin'>SIGNIN</button>";
-                echo "<a href='#' class='btn  btn-outline-warning' style='justify-content: center;'>SIGN IN</a>";
+                echo "<a href='../php/signin.php' class='btn btn-outline-warning' style='justify-content: center;color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>SIGN IN</a>";
             echo "</li>";
             echo "<li class='nav-item' style='margin:2px;'> ";
-                echo "<button type='button' class='btn btn-warning' id='signup'>SIGNUP</button>";
+                echo "<a href='../php/signup.php' class='btn btn-warning' style='justify-content: center;color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>SIGN UP</a>";
+
             echo "</li>";
         echo "</ul>";
         echo "</div>";
