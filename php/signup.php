@@ -61,28 +61,37 @@
 
         <?php
             require_once '../php/functions/dbconf.php' ;
+            try{
 
-            if(isset($_POST['submit'])){
-                $username = $_POST['username'];
-                $email = $_POST['email'];
-                $phone = $_POST['phone'];
-                $password = $_POST['password'];
-                $confpassword = $_POST['confpassword'];
-
-                if($password == $confpassword){
-                    $hash = password_hash($password,PASSWORD_DEFAULT);
-
-                    $sql = "INSERT INTO customers (name,email,phone,password) VALUES ('$username','$email','$phone','$hash')";
-
-                    $result = mysqli_query($connect,$sql);
-
-                    echo "<script>
-                        alert('Registered Successfully!');
-                        document.getElementById('loginForm').reset();
-                    </script>";
+                if(isset($_POST['submit'])){
+                    $username = $_POST['username'];
+                    $email = $_POST['email'];
+                    $phone = $_POST['phone'];
+                    $password = $_POST['password'];
+                    $confpassword = $_POST['confpassword'];
+    
+                    if($password == $confpassword){
+                        $hash = password_hash($password,PASSWORD_DEFAULT);
+    
+                        $sql = "INSERT INTO customers (name,email,phone,password) VALUES ('$username','$email','$phone','$hash')";
+    
+                        $result = mysqli_query($connect,$sql);
+    
+                        echo "<script>
+                            alert('Registered Successfully!');
+                            document.getElementById('loginForm').reset();
+                            setTimeout(function() {
+                                location.reload(); 
+                            }, 5000); 
+                        </script>";
+                    }
                 }
+            }catch(Exception $ex){
+                
             }
-        ?>
+            ?>
+            
+            
     
     
 
