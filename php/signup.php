@@ -75,6 +75,11 @@
                     $sql = "INSERT INTO customers (name,email,phone,password) VALUES ('$username','$email','$phone','$hash')";
 
                     $result = mysqli_query($connect,$sql);
+
+                    echo "<script>
+                        alert('Registered Successfully!');
+                        document.getElementById('loginForm').reset();
+                    </script>";
                 }
             }
         ?>
