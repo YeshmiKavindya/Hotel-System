@@ -18,12 +18,12 @@
                     <br>
                     <div >
                         <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username"required/>
+                        <input type="text" class="form-control" name="username" placeholder="Enter your email" required/>
                     </div>
                     <br>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" class="form-control"  name="password" id="pword" required/>
+                        <input type="password" class="form-control"  name="password" id="pword" placeholder="Enter your password" required/>
                     </div>
                     <div>
                         <input type="checkbox" class="form-check-input" name=""  onclick="show()">
