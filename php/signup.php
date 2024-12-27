@@ -18,27 +18,27 @@
                     <br>
                     <div >
                         <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username"required/>
+                        <input type="text" class="form-control" name="username" placeholder="Enter your name" required/>
                     </div>
                     <br>
                     <div >
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" required/>
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email" required/>
                     </div>
                     <br>
                     <div >
                         <label for="phone">PhoneNo</label>
-                        <input type="text" class="form-control" name="phone" required/>
+                        <input type="text" class="form-control" name="phone" placeholder="Enter your phoneno." required/>
                     </div>
                     <br>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" class="form-control"  name="password" id="pword" required/>
+                        <input type="password" class="form-control"  name="password" placeholder="Password" id="pword" required/>
                     </div>
                     <br>
                     <div>
                         <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" class="form-control"  name="confpassword" id="confpword" required/>
+                        <input type="password" class="form-control"  name="confpassword" placeholder="Confirm password" id="confpword" required/>
                     </div>
                     <div>
                         <input type="checkbox" class="form-check-input" name=""  onclick="show()">
