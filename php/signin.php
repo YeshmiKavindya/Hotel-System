@@ -13,7 +13,7 @@
     
         <div class="login">
             <div class="content text-and text-bg-secondary p-3 bg-opacity-50 bg-body-tertiary">
-                <form action="" method="post" style="color: black;margin:2em;padding:2em;">
+                <form id="loginForm" action="" method="post" style="color: black;margin:2em;padding:2em;">
                     <center><h3>Login</h3></center>
                     <br>
                     <div >
