@@ -80,16 +80,21 @@
                         echo "<script>
                             alert('Registered Successfully!');
                             document.getElementById('loginForm').reset();
-                            setTimeout(function() {
-                                location.reload(); 
-                            }, 5000); 
+                            
+                        </script>";
+                    }else{
+
+                        echo "<script>
+                            alert('Incorrect Password!Try Again');
+                            document.getElementById('loginForm').reset();    
                         </script>";
                     }
                 }
-            }catch(Exception $ex){
+                }catch(Exception $e){
+                    
+                }
                 
-            }
-            ?>
+        ?>
             
             
     
