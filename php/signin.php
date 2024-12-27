@@ -18,7 +18,7 @@
                     <br>
                     <div >
                         <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username" placeholder="Enter your email" required/>
+                        <input type="email" class="form-control" name="username" placeholder="Enter your email" required/>
                     </div>
                     <br>
                     <div>
@@ -41,7 +41,24 @@
             </div>
         </div>
     
-    
+        <?php
+
+            require_once '../php/functions/dbconf.php';
+        
+            if(isset($_POST['submit'])){
+                $email = $_POST['username'];
+                $password = $_POST['password'];
+
+                $sql="SELECT password FROM customers WHERE email='$email'";
+
+                $result = mysqli_query($connect,$sql);
+
+                $row = mysqli_fetch_assoc($result);
+                $hash = $row['password'];
+
+                echo "$hash";
+            }
+        ?>
 
         <script type="text/javascript">
             function show(){
