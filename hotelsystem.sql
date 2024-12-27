@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2024 at 07:56 PM
+-- Generation Time: Dec 27, 2024 at 08:20 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,6 +34,14 @@ CREATE TABLE `customers` (
   `phone` varchar(20) DEFAULT NULL,
   `password` varchar(300) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`customerID`, `name`, `email`, `phone`, `password`) VALUES
+(1, 'Yasas Ferreira', 'yasas@gmail.com', '0712345678', '$2y$10$sCXdWnHtLxE5vNZeQtYFHO9d8d41ZwS5YtoHEaIQaUNjkUcJRiEJG '),
+(2, 'Yeshmi', 'yeshmi@gmail.com', '071245678', '$2y$10$jlc/eaLeETfPx0QUVNyl3emO5jjbyOHfs598GBdT5wZ8VTaov/bfe');
 
 -- --------------------------------------------------------
 
@@ -122,7 +130,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `images`
