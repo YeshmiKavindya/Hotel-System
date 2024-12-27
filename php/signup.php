@@ -78,7 +78,7 @@
                         $result = mysqli_query($connect,$sql);
     
                         echo "<script>
-                            alert('Registered Successfully!');
+                            //alert('Registered Successfully!');
                             document.getElementById('loginForm').reset();
                             window.location.href = 'signin.php';
                         </script>";
