@@ -44,8 +44,8 @@
         <?php
 
             require_once '../php/functions/dbconf.php';
-        
-            if(isset($_POST['submit'])){
+            
+            try{if(isset($_POST['submit'])){
                 $email = $_POST['username'];
                 $password = $_POST['password'];
 
@@ -58,6 +58,9 @@
 
                 echo "$hash";
             }
+            }catch(Exception $e)
+            {}
+                
         ?>
 
         <script type="text/javascript">
