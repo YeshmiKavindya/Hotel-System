@@ -98,7 +98,7 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <li class="types">
                     Dishes:
                     <ul>
                       <li>Rice and Curry</li>

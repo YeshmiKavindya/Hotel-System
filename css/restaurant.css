@@ -7,6 +7,10 @@
     height: auto;
   }
   ul li {
-    font-size: 13pt;
+    font-size: 16pt;
   }
   
+  .types{
+    font-size: 16pt;
+
+  }
