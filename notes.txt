@@ -118,3 +118,12 @@ VALUES
 ('admin', '$2y$10$7e8a2d839db3be9ad7882b41b4d43b282bda4e3a40219bc88d92fyYtV3jxsq', 'Admin'),  -- 'admin' hashed using bcrypt
 ('manager', '$2y$10$56f75c7d5e3f6b52cb68c3fb29d02d422fc27997a43dbf98e76018YSFG7njs', 'Manager'),  -- 'manager' hashed using bcrypt
 ('guest', '$2y$10$12456x8f74db98d902fdb3e5e8f378ed5678e2356bb8f8709a209bzHFGXcZYj', 'Guest');  -- 'guest' hashed using bcrypt
+
+-- 1. ContactDetails Table (to store customer contact inquiries)
+CREATE TABLE ContactDetails (
+    ContactID INT AUTO_INCREMENT PRIMARY KEY,  -- Unique Contact ID
+    FullName VARCHAR(200) NOT NULL,            -- Full name of the person contacting (First & Last Name combined)
+    Email VARCHAR(100) NOT NULL,               -- Email address of the person contacting
+    Message TEXT NOT NULL,                     -- Message sent by the person contacting
+    ContactDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Date and time the contact was made
+);

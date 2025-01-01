@@ -77,9 +77,7 @@ function showDetailsRestaurant($connect){
         mysqli_close($connect);
 }catch(Exception $ex){
 
-}
-
-    
+}   
 }
 
 ?>

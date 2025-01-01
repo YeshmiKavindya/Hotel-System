@@ -31,7 +31,7 @@
                     <br>
         <form action="">
             <div class="d-grid gap-2 col-4 mx-auto">
-                <input type="submit" value="Add Details" class="form-control">
+                <input type="submit" value="Add Reservation" class="form-control">
             </div>
 
         </form>
