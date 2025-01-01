@@ -77,7 +77,7 @@
                         </tbody>
                     </table>
                     <br>
-                    <form action="">
+        <form action="">
             <div class="d-grid gap-2 col-4 mx-auto">
                 <input type="submit" value="Add Reservations" class="form-control">
             </div>
