@@ -25,7 +25,7 @@ require_once 'dbconf.php';
         ";
          
 
-        for($i=$numres-5;$i<$numres;$i++){
+        for($i=$numres;$i>$numres-5;$i--){
             $row = mysqli_fetch_assoc($result);
             echo "<tr>";
             foreach($row as $key){

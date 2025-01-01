@@ -46,10 +46,10 @@
             require_once '../php/functions/dbconf.php';
 
             try{if(isset($_POST['submit'])){
-                $email = $_POST['username'];
+                $name = $_POST['username'];
                 $password = $_POST['password'];
 
-                $sql="SELECT password FROM customers WHERE email='$email'";
+                $sql="SELECT password FROM customers WHERE name='$name'";
 
                 $result = mysqli_query($connect,$sql);
 
