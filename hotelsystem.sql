@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2024 at 08:29 AM
+-- Generation Time: Jan 01, 2025 at 11:16 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -97,6 +97,36 @@ INSERT INTO `images` (`imageID`, `imagename`, `file_path`, `description`) VALUES
 (42, 'Image42', '../images/89.jpg', 'food'),
 (43, 'Image43', '../images/69.jpg', 'room');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rooms`
+--
+
+CREATE TABLE `rooms` (
+  `RoomID` int(11) NOT NULL,
+  `RoomType` varchar(50) NOT NULL,
+  `PricePerNight` decimal(10,2) NOT NULL,
+  `Capacity` int(11) NOT NULL,
+  `Status` varchar(20) DEFAULT 'Available'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rooms`
+--
+
+INSERT INTO `rooms` (`RoomID`, `RoomType`, `PricePerNight`, `Capacity`, `Status`) VALUES
+(1, 'Single', 100.00, 1, 'Available'),
+(2, 'Double', 150.00, 2, 'Available'),
+(3, 'Suite', 250.00, 4, 'Occupied'),
+(4, 'Deluxe', 200.00, 2, 'Available'),
+(5, 'Presidential', 500.00, 5, 'Available'),
+(6, 'Single', 120.00, 1, 'Occupied'),
+(7, 'Double', 180.00, 2, 'Available'),
+(8, 'Penthouse', 800.00, 6, 'Available'),
+(9, 'Standard', 80.00, 1, 'Available'),
+(10, 'Luxury', 300.00, 3, 'Occupied');
+
 --
 -- Indexes for dumped tables
 --
@@ -115,6 +145,12 @@ ALTER TABLE `images`
   ADD PRIMARY KEY (`imageID`);
 
 --
+-- Indexes for table `rooms`
+--
+ALTER TABLE `rooms`
+  ADD PRIMARY KEY (`RoomID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -129,6 +165,12 @@ ALTER TABLE `customers`
 --
 ALTER TABLE `images`
   MODIFY `imageID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+
+--
+-- AUTO_INCREMENT for table `rooms`
+--
+ALTER TABLE `rooms`
+  MODIFY `RoomID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
