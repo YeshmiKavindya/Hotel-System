@@ -2,44 +2,36 @@
 
 require_once 'dbconf.php';
     function showDetailsRooms($connect){
-
-        
-
         try{
             
-            $sql = "SELECT * from rooms";
-        $result = mysqli_query($connect,$sql);
-
-        $numres = mysqli_num_rows($result);
-
-        echo "
-            <table>
-            <thead>
-                <th>RoomID</th>
-                <th>RoomType</th>
-                <th>PricePerNight</th>
-                <th>Capacity</th>
-                <th>Status</th>
-            </thead>
-            <tbody>
-        ";
-         
-
-        for($i=$numres;$i>$numres-5;$i--){
-            $row = mysqli_fetch_assoc($result);
-            echo "<tr>";
-            foreach($row as $key){
-                
-                    echo "<td>".$key."</td>";
-                }
+            $sql = "SELECT * from roomreservations";
+            $result = mysqli_query($connect,$sql);
+            $numres = mysqli_num_rows($result);
             
-            echo "</tr>";
-        }
-
-        echo "</tbody>
-            </table>";
-
-            //mysqli_close($connect);
+            echo "
+                <table>
+                <thead>
+                    <th>ReservationID</th>
+                    <th>CustomerID</th>
+                    <th>RoomID</th>
+                    <th>CheckInDate</th>
+                    <th>CheckOutDate</th>
+                    <th>TotalAmount</th>
+                    <th>PaymentStatus</th>
+                </thead>
+                <tbody>
+            ";
+            
+            for($i=0;$i<$numres;$i++){
+                $row = mysqli_fetch_assoc($result);
+                echo "<tr>";
+                foreach($row as $key){
+                        echo "<td>".$key."</td>";
+                    }
+                echo "</tr>";
+            }
+            echo "</tbody>
+                </table>";
     }catch(Exception $ex){
 
     }
@@ -51,41 +43,36 @@ require_once 'dbconf.php';
 
 function showDetailsRestaurant($connect){
 
-        
-
     try{
         
-        $sql = "SELECT * from rooms";
-    $result = mysqli_query($connect,$sql);
+        $sql = "SELECT * from restaurantreservations";
+        $result = mysqli_query($connect,$sql);
+        $numres = mysqli_num_rows($result);
 
-    $numres = mysqli_num_rows($result);
-
-    echo "
-        <table>
-        <thead>
-            <th>RoomID</th>
-            <th>RoomType</th>
-            <th>PricePerNight</th>
-            <th>Capacity</th>
-            <th>Status</th>
-        </thead>
-        <tbody>
-    ";
-     
-
-    for($i=$numres-5;$i<$numres;$i++){
-        $row = mysqli_fetch_assoc($result);
-        echo "<tr>";
-        foreach($row as $key){
-            
-                echo "<td>".$key."</td>";
-            }
+        echo "
+            <table>
+            <thead>
+                <th>ReservationID</th>
+                <th>CustomerID</th>
+                <th>TableID</th>
+                <th>ReservationDate</th>
+                <th>NumberOfGuests</th>
+                <th>SpecialRequests</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+        ";
         
-        echo "</tr>";
-    }
-
-    echo "</tbody>
-        </table>";
+        for($i=0;$i<$numres;$i++){
+            $row = mysqli_fetch_assoc($result);
+            echo "<tr>";
+            foreach($row as $key){
+                    echo "<td>".$key."</td>";
+                }
+            echo "</tr>";
+        }
+        echo "</tbody>
+            </table>";
 
         mysqli_close($connect);
 }catch(Exception $ex){
