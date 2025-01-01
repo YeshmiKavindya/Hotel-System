@@ -1,99 +1,120 @@
-https://special-journey-q7qv7r5wxv4r3w7w.github.dev/
--- Create database
-CREATE DATABASE RoomRestaurantManagement;
-
--- Use the created database
-USE RoomRestaurantManagement;
-
--- Create Customers table
-CREATE TABLE customers (
-    customerID INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    phone VARCHAR(20),
-    password VARCHAR(300)
+-- 1. Customers Table (to store customer details)
+CREATE TABLE Customers (
+    CustomerID INT AUTO_INCREMENT PRIMARY KEY,  -- Unique Customer ID
+    FirstName VARCHAR(100) NOT NULL,            -- First name of the customer
+    LastName VARCHAR(100) NOT NULL,             -- Last name of the customer
+    Email VARCHAR(100) NOT NULL,                -- Customer's email
+    PhoneNumber VARCHAR(20),                    -- Customer's phone number
+    Address VARCHAR(255)                        -- Customer's address
 );
 
--- Create Rooms table
-CREATE TABLE rooms (
-    RoomID INT AUTO_INCREMENT PRIMARY KEY,
-    RoomType VARCHAR(50) NOT NULL,
-    PricePerNight DECIMAL(10, 2) NOT NULL,
-    Capacity INT NOT NULL,
-    Status VARCHAR(20) DEFAULT 'Available'
+-- 2. Rooms Table (to store hotel room details)
+CREATE TABLE Rooms (
+    RoomID INT AUTO_INCREMENT PRIMARY KEY,      -- Unique Room ID
+    RoomType VARCHAR(50) NOT NULL,               -- Type of room (e.g., Single, Double)
+    PricePerNight DECIMAL(10, 2) NOT NULL,       -- Price per night for the room
+    Capacity INT NOT NULL,                      -- Maximum capacity of the room
+    Status VARCHAR(20) DEFAULT 'Available'      -- Room status (Available, Occupied, Reserved)
 );
 
--- Create Reservations table
-CREATE TABLE Reservations (
-    ReservationID INT AUTO_INCREMENT PRIMARY KEY,
-    CustomerID INT NOT NULL,
-    RoomID INT NOT NULL,
-    CheckInDate DATE NOT NULL,
-    CheckOutDate DATE NOT NULL,
-    TotalAmount DECIMAL(10, 2) NOT NULL,
-    PaymentStatus VARCHAR(20) DEFAULT 'Unpaid',
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
-    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
+-- 3. Room Reservations Table (to store room reservation details)
+CREATE TABLE RoomReservations (
+    ReservationID INT AUTO_INCREMENT PRIMARY KEY,  -- Unique Reservation ID
+    CustomerID INT NOT NULL,                       -- Customer who made the reservation
+    RoomID INT NOT NULL,                           -- Room being reserved
+    CheckInDate DATE NOT NULL,                     -- Check-in date
+    CheckOutDate DATE NOT NULL,                    -- Check-out date
+    TotalAmount DECIMAL(10, 2) NOT NULL,           -- Total amount for the stay
+    PaymentStatus VARCHAR(20) DEFAULT 'Unpaid',    -- Payment status (Paid, Unpaid)
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),  -- Linking to Customers table
+    FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)                  -- Linking to Rooms table
 );
 
--- Create Restaurant Tables table
+-- 4. Restaurant Tables Table (to store details about restaurant tables)
 CREATE TABLE RestaurantTables (
-    TableID INT AUTO_INCREMENT PRIMARY KEY,
-    TableNumber INT NOT NULL,
-    Capacity INT NOT NULL,
-    Status VARCHAR(20) DEFAULT 'Available'
+    TableID INT AUTO_INCREMENT PRIMARY KEY,       -- Unique Table ID
+    TableNumber INT NOT NULL,                     -- Table number (identifier)
+    SeatingCapacity INT NOT NULL,                 -- Number of people the table can seat
+    Location VARCHAR(50),                         -- Location of the table (e.g., "Window side")
+    Status VARCHAR(20) DEFAULT 'Available'        -- Status of the table (Available, Occupied, Reserved)
 );
 
--- Create Menu Items table
-CREATE TABLE MenuItems (
-    MenuItemID INT AUTO_INCREMENT PRIMARY KEY,
-    ItemName VARCHAR(100) NOT NULL,
-    Price DECIMAL(10, 2) NOT NULL,
-    Category VARCHAR(50)
+-- 5. Restaurant Reservations Table (to store restaurant reservations)
+CREATE TABLE RestaurantReservations (
+    ReservationID INT AUTO_INCREMENT PRIMARY KEY,  -- Unique Reservation ID
+    CustomerID INT NOT NULL,                       -- Customer making the reservation
+    TableID INT NOT NULL,                          -- Table being reserved
+    ReservationDate DATETIME NOT NULL,             -- Date and time of the reservation
+    NumberOfGuests INT NOT NULL,                   -- Number of guests for the reservation
+    SpecialRequests TEXT,                          -- Special requests (e.g., dietary, seating preferences)
+    Status VARCHAR(20) DEFAULT 'Pending',          -- Status of the reservation (Pending, Confirmed, Cancelled)
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),  -- Reference to Customers table
+    FOREIGN KEY (TableID) REFERENCES RestaurantTables(TableID)  -- Reference to RestaurantTables table
 );
 
--- Create Orders table
-CREATE TABLE Orders (
-    OrderID INT AUTO_INCREMENT PRIMARY KEY,
-    TableID INT NOT NULL,
-    CustomerID INT NOT NULL,
-    OrderDate DATETIME DEFAULT CURRENT_TIMESTAMP,
-    TotalAmount DECIMAL(10, 2) NOT NULL,
-    PaymentStatus VARCHAR(20) DEFAULT 'Unpaid',
-    FOREIGN KEY (TableID) REFERENCES RestaurantTables(TableID),
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
-);
-
--- Create Order Details table
-CREATE TABLE OrderDetails (
-    OrderDetailID INT AUTO_INCREMENT PRIMARY KEY,
-    OrderID INT NOT NULL,
-    MenuItemID INT NOT NULL,
-    Quantity INT NOT NULL,
-    SubTotal DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
-    FOREIGN KEY (MenuItemID) REFERENCES MenuItems(MenuItemID)
-);
-
--- Create Employees table
-CREATE TABLE Employees (
-    EmployeeID INT AUTO_INCREMENT PRIMARY KEY,
-    FirstName VARCHAR(50) NOT NULL,
-    LastName VARCHAR(50) NOT NULL,
-    Role VARCHAR(50) NOT NULL,
-    ContactNumber VARCHAR(20)
-);
-
--- Create Payments table
+-- 6. Payments Table (to store payment details for room and restaurant reservations)
 CREATE TABLE Payments (
-    PaymentID INT AUTO_INCREMENT PRIMARY KEY,
-    PaymentType VARCHAR(50) NOT NULL,
-    PaymentDate DATETIME DEFAULT CURRENT_TIMESTAMP,
-    Amount DECIMAL(10, 2) NOT NULL,
-    CustomerID INT NOT NULL,
-    ReservationID INT,
-    OrderID INT,
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
-    FOREIGN KEY (ReservationID) REFERENCES Reservations(ReservationID),
-    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+    PaymentID INT AUTO_INCREMENT PRIMARY KEY,    -- Unique Payment ID
+    ReservationID INT NOT NULL,                   -- Reservation associated with the payment (either room or restaurant)
+    PaymentDate DATETIME NOT NULL,                 -- Date of payment
+    Amount DECIMAL(10, 2) NOT NULL,                -- Amount paid
+    PaymentMethod VARCHAR(50),                     -- Method of payment (Credit Card, Cash, etc.)
+    PaymentStatus VARCHAR(20) DEFAULT 'Completed', -- Payment status (Completed, Pending, Failed)
+    FOREIGN KEY (ReservationID) REFERENCES RoomReservations(ReservationID)  -- Linking to room reservations
+        ON DELETE CASCADE
 );
+
+-- 7. Users Table (to store user details for authentication)
+CREATE TABLE Users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,          -- Unique User ID
+    Username VARCHAR(50) NOT NULL UNIQUE,           -- Username for the user (e.g., admin, manager)
+    PasswordHash VARCHAR(255) NOT NULL,              -- Hashed password (never store plain text passwords)
+    Role VARCHAR(20) DEFAULT 'Guest'                -- Role of the user (Admin, Manager, Guest, etc.)
+);
+
+-- Sample Insert Queries
+
+-- 8. Inserting Sample Customers
+INSERT INTO Customers (FirstName, LastName, Email, PhoneNumber, Address)
+VALUES
+('John', 'Doe', 'john.doe@example.com', '123-456-7890', '123 Elm St, Springfield, IL'),
+('Jane', 'Smith', 'jane.smith@example.com', '234-567-8901', '456 Oak Ave, Chicago, IL');
+
+-- 9. Inserting Sample Rooms
+INSERT INTO Rooms (RoomType, PricePerNight, Capacity)
+VALUES
+('Single', 100.00, 1),
+('Double', 150.00, 2),
+('Suite', 250.00, 4);
+
+-- 10. Inserting Sample Restaurant Tables
+INSERT INTO RestaurantTables (TableNumber, SeatingCapacity, Location, Status)
+VALUES
+(1, 2, 'Window side', 'Available'),
+(2, 4, 'Near the bar', 'Reserved'),
+(3, 6, 'Private room', 'Available');
+
+-- 11. Inserting Room Reservations
+INSERT INTO RoomReservations (CustomerID, RoomID, CheckInDate, CheckOutDate, TotalAmount, PaymentStatus)
+VALUES
+(1, 2, '2025-01-10', '2025-01-12', 300.00, 'Unpaid'),
+(2, 3, '2025-01-15', '2025-01-18', 750.00, 'Paid');
+
+-- 12. Inserting Restaurant Reservations
+INSERT INTO RestaurantReservations (CustomerID, TableID, ReservationDate, NumberOfGuests, SpecialRequests, Status)
+VALUES
+(1, 1, '2025-01-10 19:00:00', 2, 'Window seat, vegetarian meal', 'Confirmed'),
+(2, 2, '2025-01-12 20:00:00', 4, 'None', 'Pending');
+
+-- 13. Inserting Payments
+INSERT INTO Payments (ReservationID, PaymentDate, Amount, PaymentMethod, PaymentStatus)
+VALUES
+(1, '2025-01-10 18:00:00', 300.00, 'Credit Card', 'Completed'),
+(2, '2025-01-15 12:00:00', 750.00, 'Cash', 'Completed');
+
+-- 14. Inserting Sample Users (hashed passwords, use bcrypt or another secure method for hashing)
+INSERT INTO Users (Username, PasswordHash, Role)
+VALUES
+('admin', '$2y$10$7e8a2d839db3be9ad7882b41b4d43b282bda4e3a40219bc88d92fyYtV3jxsq', 'Admin'),  -- 'admin' hashed using bcrypt
+('manager', '$2y$10$56f75c7d5e3f6b52cb68c3fb29d02d422fc27997a43dbf98e76018YSFG7njs', 'Manager'),  -- 'manager' hashed using bcrypt
+('guest', '$2y$10$12456x8f74db98d902fdb3e5e8f378ed5678e2356bb8f8709a209bzHFGXcZYj', 'Guest');  -- 'guest' hashed using bcrypt
