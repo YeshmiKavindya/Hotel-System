@@ -19,7 +19,7 @@
             </table>
         </div>
         <div class="col">
-            <center><h4 class="tHead">DASHBOARD</h4></center>
+            <center><h4 class="tHead">YARROW HEIGHTS HOTEL</h4></center>
             <div class="row">
                 <div class="col">
                     <br>
