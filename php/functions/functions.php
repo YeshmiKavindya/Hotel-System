@@ -39,7 +39,7 @@ require_once 'dbconf.php';
         echo "</tbody>
             </table>";
 
-            mysqli_close($connect);
+            //mysqli_close($connect);
     }catch(Exception $ex){
 
     }
@@ -55,7 +55,7 @@ function showDetailsRestaurant($connect){
 
     try{
         
-        $sql = "SELECT * from restaurant";
+        $sql = "SELECT * from rooms";
     $result = mysqli_query($connect,$sql);
 
     $numres = mysqli_num_rows($result);

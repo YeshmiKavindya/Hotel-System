@@ -15,7 +15,7 @@ CREATE TABLE customers (
 );
 
 -- Create Rooms table
-CREATE TABLE Rooms (
+CREATE TABLE rooms (
     RoomID INT AUTO_INCREMENT PRIMARY KEY,
     RoomType VARCHAR(50) NOT NULL,
     PricePerNight DECIMAL(10, 2) NOT NULL,
