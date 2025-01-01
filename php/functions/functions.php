@@ -25,7 +25,7 @@
         for($i=0;$i<$numres;$i++){
             $row = mysqli_fetch_assoc($result);
             echo "<tr>";
-            foreach($result as $key=>$value){
+            foreach($row as $key=>$value){
                 foreach($value as $values){
                     echo "<td>".$values."</td>";
                 }
