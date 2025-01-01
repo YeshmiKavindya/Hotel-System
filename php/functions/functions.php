@@ -25,11 +25,11 @@
         for($i=0;$i<$numres;$i++){
             $row = mysqli_fetch_assoc($result);
             echo "<tr>";
-            foreach($row as $key=>$value){
-                foreach($value as $values){
-                    echo "<td>".$values."</td>";
+            foreach($row as $key){
+                
+                    echo "<td>".$key."</td>";
                 }
-            }
+            
             echo "</tr>";
         }
 
