@@ -13,9 +13,9 @@
             <table>
                
                     <tr><td>Profile</td></tr>
-                   <tr><td>Rooms Reservation</td></tr> 
-                   <tr><td>Restaurant Reservation</td></tr>
-                   <tr><td>Wedding Hall Reservation</td></tr>
+                    <tr><td>Rooms Reservation</td></tr> 
+                    <tr><td>Restaurant Reservation</td></tr>
+                    <tr><td>Wedding Hall Reservation</td></tr>
             </table>
         </div>
         <div class="col">
@@ -45,7 +45,12 @@
                         </tbody>
                     </table>
                     <br>
-                    <a href="#" class="btn btn-secondary" style="justify-content: center;">Add Reservations</a>
+        <form action="">
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <input type="submit" value="Add Details" class="form-control">
+            </div>
+
+        </form>
                     
                 </div>
                 <div class="col">
