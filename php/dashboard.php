@@ -24,26 +24,10 @@
                 <div class="col">
                     <br>
                     <h5>Rooms Reservation</h5>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>RoomsID</th>
-                                <th>CustomerName</th>
-                                <th>CheckIn</th>
-                                <th>CheckOut</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>101</td>
-                                <td>John</td>
-                                <td>10/12/2024</td>
-                                <td>13/12/2024</td>
-                                <td>Confirmed</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <?php require_once 'functions/functions.php';
+                        
+                            showDetails($connect);
+                        ?>
                     <br>
         <form action="">
             <div class="d-grid gap-2 col-4 mx-auto">
@@ -77,12 +61,7 @@
                         </tbody>
                     </table>
                     <br>
-                    <label for="">
-                        <?php require_once 'functions/functions.php';
-                        
-                            showDetails();
-                        ?>
-                    </label>
+                   
         <form action="">
             <div class="d-grid gap-2 col-4 mx-auto">
                 <input type="submit" value="Add Reservations" class="form-control">

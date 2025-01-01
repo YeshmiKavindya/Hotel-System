@@ -1,11 +1,13 @@
 <?php
 
+require_once 'dbconf.php';
+    function showDetails($connect){
 
-    function showDetails(){
+        
 
-        require_once 'dbconf.php';
-
-        $sql = "SELECT * from Rooms";
+        try{
+            
+            $sql = "SELECT * from Rooms";
         $result = mysqli_query($connect,$sql);
 
         $numres = mysqli_num_rows($result);
@@ -35,8 +37,12 @@
 
         echo "</tbody>
             </table>";
-        
+
+            mysqli_close($connect);
+    }catch(Exception $ex){
 
     }
 
+        
+}
 ?>
