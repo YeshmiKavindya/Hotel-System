@@ -77,6 +77,12 @@
                         </tbody>
                     </table>
                     <br>
+                    <label for="">
+                        <?php require_once 'functions/functions.php';
+                        
+                            showDetails();
+                        ?>
+                    </label>
         <form action="">
             <div class="d-grid gap-2 col-4 mx-auto">
                 <input type="submit" value="Add Reservations" class="form-control">
