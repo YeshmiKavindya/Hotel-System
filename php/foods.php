@@ -21,7 +21,43 @@
             transform: scale(1.1);  /* Increase size when hovered */
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
         }
+
+        .logo {
+    width: 80px;
+    height: 50px;
+  }
+  .nav_bar {
+    width: 100%;
+    height: 30px;
+  }
+  
+  .navbar a {
+    display: block;
+    color: black;
+    justify-items: right;
+    font-weight: 900;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 </style>
+
+
+<!--Navigation bar-->
+<nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background-color: black"
+    >
+      <div class="container-fluid">
+        
+        <?php
+          require_once 'functions/navbar.php';
+          addLogo();
+          addToggleButton();
+          navigationbar();
+        ?>
+      </div>
+    </nav>
 <?php
     require_once 'functions/functions.php';
 
