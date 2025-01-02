@@ -23,7 +23,7 @@ function addImage($id1, $id2, $id3,$connect){
           foreach ($images as $index => $image) {
               $activeClass = ($index === 0) ? 'active' : ''; 
               echo '<div class="carousel-item ' . $activeClass . '">
-                      <img src="' . $image . '" class="d-block w-100" alt="...">
+                      <img src="' . $image . '" class="d-block w-100" alt="..." style="padding:1.5em;">
                     </div>';
           }
 

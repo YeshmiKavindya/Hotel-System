@@ -7,11 +7,25 @@
     <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
+<style>
 
+.card {
+            width: 25rem;
+            margin: 1em;
+            padding: 3px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scale and shadow */
+        }
+
+        /* Card hover effect */
+        .card:hover {
+            transform: scale(1.1);  /* Increase size when hovered */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+        }
+</style>
 <?php
     require_once 'functions/functions.php';
 
-    echo "<center><div class='row' style='margin:10px;'>";
+    echo "<center><div class='row' style='margin:25px;'>";
    
     foodDetails($connect);
     
