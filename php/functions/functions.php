@@ -87,14 +87,14 @@ function foodDetails($connect){
 
     $numrecords = mysqli_num_rows($result);
 
-    echo "$numrecords";
+    // echo "$numrecords";
 
     for ($i=0;$i<$numrecords;$i++){
 
         $data = mysqli_fetch_assoc($result);
         foreach($data as $filepath){
-            echo "<div class='card' style='width: 15rem;'>
-            <img src='$filepath' class='card-img-top' alt='...'>
+            echo "<div class='card' style='width: 25rem; margin:1em;padding:3px;'>
+            <img src='$filepath' class='card-img-top' alt='...' style='margin:1px;padding:10px;'>
             <div class='card-body'>
                 <h5 class='card-title'>Card title</h5>
                 <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -103,6 +103,10 @@ function foodDetails($connect){
             </div>";
 
          }
+
+        if($i%3 == 0){
+            echo "<br>";
+        }
     }
 }
 

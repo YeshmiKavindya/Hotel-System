@@ -11,9 +11,11 @@
 <?php
     require_once 'functions/functions.php';
 
-    echo "<div class='row'>";
+    echo "<center><div class='row' style='margin:10px;'>";
+   
     foodDetails($connect);
-    echo "</div>";
+    
+   echo  "</div></center>";
     
     
 
