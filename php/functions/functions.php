@@ -102,12 +102,8 @@ function foodDetails($connect){
             </div>
             </div>";
 
-
-        }
-
+         }
     }
-
-    
 }
 
 ?>
