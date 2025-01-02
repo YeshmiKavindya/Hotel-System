@@ -144,8 +144,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
@@ -217,8 +217,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
@@ -291,8 +291,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
@@ -361,8 +361,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
@@ -435,8 +435,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
@@ -505,8 +505,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
@@ -577,8 +577,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
@@ -647,8 +647,8 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#"
-                class="btn btn-primary"
+                href="#foods.php"
+                class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
               >
