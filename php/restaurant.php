@@ -79,14 +79,15 @@
     </div>
 
     <!--food_category_1-->
-    <div class="row" style="padding: 3.5vh; background-color: #d8a25e">
+    <div class="row" style="padding: 3.5vh; background-color: #d8a25e;">
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
           <div
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">Sri Lankan Cuisine</h5>
+          <center><h3 class="card-title">Sri Lankan Cuisine</h3></center>
+            
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -159,7 +160,8 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">Chinese Cuisine</h5>
+          <center><h3 class="card-title">Chinese Cuisine</h3></center>
+            
 
             <!-- add image -->
             <div><?php
@@ -236,7 +238,8 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">Indian Cuisine</h5>
+          <center><h5 class="card-title">Indian Cuisine</h5></center>
+            
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -306,7 +309,8 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">Italian Cuisine</h5>
+          <center><h3 class="card-title">Italian Cuisine</h3></center>
+            
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -380,7 +384,8 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">Japanese Cuisine</h5>
+          <center><h3 class="card-title">Japanese Cuisine</h3></center>
+            
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -450,7 +455,8 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">French Cuisine</h5>
+          <center><h3 class="card-title">French Cuisine</h3></center>
+            
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -524,7 +530,8 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">Thai Cuisine</h5>
+          <center><h3 class="card-title">Thai Cuisine</h3></center>
+            
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -592,7 +599,8 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-            <h5 class="card-title">American Cuisine</h5>
+          <center><h3 class="card-title">American Cuisine</h3></center>
+            
             <!-- add image -->
             <div><?php
                 require_once 'functions/dbconf.php';
@@ -647,7 +655,7 @@
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
               <a
-                href="#foods.php"
+                href="foods.php"
                 class="btn btn-secondary"
                 style="background-color: burlywood; border: none"
                 >Order Now</a
