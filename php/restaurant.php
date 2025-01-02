@@ -99,9 +99,9 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li class="types">
+                  <li class="listhead">
                     Dishes:
-                    <ul>
+                    <ul class="listitems">
                       <li>Rice and Curry</li>
                       <li>Hoppers</li>
                       <li>Kottu Roti</li>
@@ -109,9 +109,9 @@
                       <li>Pol Sambol</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Stewing</li>
                       <li>Frying</li>
                       <li>Grilling</li>
@@ -121,9 +121,9 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Coconut</li>
                       <li>Spices (cinnamon, cardamom)</li>
                       <li>lentils</li>
@@ -132,9 +132,9 @@
                     <br />
                   </li>
 
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>
                         Vegan-friendly dishes And Spice levels can be adjusted
                       </li>
@@ -175,9 +175,9 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Dishes:
-                    <ul>
+                    <ul class="listitems">
                       <li>Dumplings</li>
                       <li>Peking Duck</li>
                       <li>Kung Pao Chicken</li>
@@ -185,9 +185,9 @@
                       <li>Sweet and Sour Pork</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Stir-frying</li>
                       <li>Steaming</li>
                       <li>Deep-frying</li>
@@ -197,9 +197,9 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Soy sauce</li>
                       <li>Ginger</li>
                       <li>Garlic</li>
@@ -207,9 +207,9 @@
                       <li>Rice</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>Vegetariane</li>
                       <li>Vluten-free options available</li>
                     </ul>
@@ -252,18 +252,18 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <b><li style="font-size: 18pt;font-weight:bolder"></b>
+                  <b><li class="listhead"></b>
                     Dishes:
-                    <ul style="font-size: 14pt;">
+                    <ul class="listitems">
                       <li>Butter Chicken</li>
                       <li>Biryani</li>
                       <li>Palak Paneer</li>
                       <li>Dosa</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Tandoori</li>
                       <li>Curries</li>
                       <li>Frying</li>
@@ -273,18 +273,18 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Spices (cumin, coriander)</li>
                       <li>Rice</li>
                       <li>lentils</li>
                     </ul>
                   </li>
                   <br />
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>Vegan</li>
                       <li>Vegetarian And Gluten-free options available</li>
                     </ul>
@@ -323,18 +323,18 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Dishes:
-                    <ul>
+                    <ul class="listitems">
                       <li>Pasta (Spaghetti, Fettuccine)</li>
                       <li>Risotto</li>
                       <li>Pizza</li>
                       <li>Tiramisua</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Baking</li>
                       <li>Sautéing</li>
                       <li>Boiling</li>
@@ -344,18 +344,18 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Olive oil</li>
                       <li>Tomatoes</li>
                       <li>Garlic</li>
                       <li>Cheese (Parmesan, Mozzarella)</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>Gluten-free pasta</li>
                       <li>Vegetarian pizzas available</li>
                     </ul>
@@ -398,18 +398,18 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Dishes:
-                    <ul>
+                    <ul class="listitems">
                       <li>Sushin</li>
                       <li>Ramen</li>
                       <li>Tempurar</li>
                       <li>Miso Soup</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Frying</li>
                       <li>Rolling</li>
                       <li>Boiling</li>
@@ -419,18 +419,18 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Rice</li>
                       <li>Seaweed</li>
                       <li>Fish</li>
                       <li>Soy sauce</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>Vegetarian sushi</li>
                       <li>Gluten-free soy sauce</li>
                     </ul>
@@ -469,18 +469,18 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Dishes:
-                    <ul>
+                    <ul class="listitems">
                       <li>Coq au Vin</li>
                       <li>Ratatouille</li>
                       <li>Crème Brûlée</li>
                       <li>Quiche</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Simmering</li>
                       <li>Sautéing</li>
                       <li>Baking</li>
@@ -490,18 +490,18 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Butter</li>
                       <li>Creams</li>
                       <li>Herbs</li>
                       <li>Fresh vegetables</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>Vegetarian options</li>
                       <li>Gluten-free pastries</li>
                     </ul>
@@ -543,18 +543,18 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Dishes:
-                    <ul>
+                    <ul class="listitems">
                       <li>Pad Thai</li>
                       <li>Green Curry</li>
                       <li>Tom Yum Soup</li>
                       <li>Mango Sticky Rice</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Stir-frying</li>
                       <li>Steaming</li>
                       <li>Boiling</li>
@@ -564,18 +564,18 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Rice</li>
                       <li>Coconut milk</li>
                       <li>Fresh herbs</li>
                       <li>Seafood</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>Vegan and gluten-free options available</li>
                     </ul>
                   </li>
@@ -613,7 +613,7 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Dishes:
                     <ul>
                       <li>Burgers</li>
@@ -622,9 +622,9 @@
                       <li>Apple Pie</li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="listhead">
                     Preparation Styles:
-                    <ul>
+                    <ul class="listitems">
                       <li>Grillingg</li>
                       <li>Frying</li>
                       <li>Baking</li>
@@ -634,18 +634,18 @@
               </div>
               <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
                 <ul>
-                  <li>
+                  <li class="listhead">
                     Ingredients:
-                    <ul>
+                    <ul class="listitems">
                       <li>Chicken</li>
                       <li>Potatoes</li>
                       <li>Seasonal Vegetables</li>
                     </ul>
                   </li>
                   <br />
-                  <li>
+                  <li class="listhead">
                     Dietary Options:
-                    <ul>
+                    <ul class="listitems">
                       <li>Plant-based burgers</li>
                       <li>Gluten-free Options</li>
                     </ul>
