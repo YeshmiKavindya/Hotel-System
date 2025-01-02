@@ -24,7 +24,7 @@
 </nav>
 
 <!--Contact Form-->
-<form action="" method="post">
+<form action="<?php echo $_SERVER['PHP_SELF']; ?> " method="post">
   <div class="content text-and text-bg-secondary p-3 bg-opacity-50 bg-body-tertiary">
     <div class="mb-3">
       <h5>Contact Us</h5>
@@ -59,13 +59,13 @@
   require_once '../php/functions/dbconf.php';
 
   try {
-    if(isset($_POST['sumbit'])){
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $name = $_POST['name'];
         $email = $_POST['email']; 
         $message = $_POST['message'];
 
 
-        $sql = "INSERT INTO ContactDetails (FullName, Email, Message) VALUES ('$name','$email','$message')";
+        $sql = "INSERT INTO contactdetails (FullName, Email, Message) VALUES ($name,$email,$message)";
         $result = mysqli_query($connect,$sql);
 
     }
