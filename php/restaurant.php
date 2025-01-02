@@ -238,7 +238,7 @@
             class="card-body"
             style="font-family: 'Times New Roman'; background-color: #f3f3e0"
           >
-          <center><h5 class="card-title">Indian Cuisine</h5></center>
+          <center><h3 class="card-title">Indian Cuisine</h3></center>
             
             <!-- add image -->
             <div><?php
@@ -252,9 +252,9 @@
             <div class="row">
               <div class="col-sm-6 col-md-5 col-lg-6">
                 <ul>
-                  <li>
+                  <b><li style="font-size: 18pt;font-weight:bolder"></b>
                     Dishes:
-                    <ul>
+                    <ul style="font-size: 14pt;">
                       <li>Butter Chicken</li>
                       <li>Biryani</li>
                       <li>Palak Paneer</li>
