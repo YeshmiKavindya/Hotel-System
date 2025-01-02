@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 01, 2025 at 12:54 PM
+-- Generation Time: Jan 02, 2025 at 07:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `hotelsystem`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactdetails`
+--
+
+CREATE TABLE `contactdetails` (
+  `ContactID` int(11) NOT NULL,
+  `FullName` varchar(200) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Message` text NOT NULL,
+  `ContactDate` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -250,6 +264,12 @@ INSERT INTO `users` (`UserID`, `Username`, `PasswordHash`, `Role`) VALUES
 --
 
 --
+-- Indexes for table `contactdetails`
+--
+ALTER TABLE `contactdetails`
+  ADD PRIMARY KEY (`ContactID`);
+
+--
 -- Indexes for table `customers`
 --
 ALTER TABLE `customers`
@@ -300,6 +320,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `contactdetails`
+--
+ALTER TABLE `contactdetails`
+  MODIFY `ContactID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `customers`
