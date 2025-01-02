@@ -56,18 +56,20 @@
 
 <?php
 
-  require_once '../php/functions/dbconf.php';
+  require_once 'functions/dbconf.php';
 
   try {
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $name = $_POST['name'];
-        $email = $_POST['email']; 
-        $message = $_POST['message'];
+        
+      if(isset($_POST['submit'])){
+          $name = $_POST['name'];
+          $email = $_POST['email'];
+          $message = $_POST['message'];
 
+          $sql = "INSERT INTO contactdetails (FullName, Email, Message) VALUES ($name,$email,$message)";
+          $result = mysqli_query($connect,$sql);
 
-        $sql = "INSERT INTO contactdetails (FullName, Email, Message) VALUES ($name,$email,$message)";
-        $result = mysqli_query($connect,$sql);
-
+      }
     }
   } catch (Exception $e) {
     
