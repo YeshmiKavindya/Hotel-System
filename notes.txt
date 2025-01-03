@@ -127,3 +127,36 @@ CREATE TABLE ContactDetails (
     Message TEXT NOT NULL,                     -- Message sent by the person contacting
     ContactDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Date and time the contact was made
 );
+
+
+"A vibrant bowl of fresh fruit salad": A colorful assortment of ripe strawberries, blueberries, pineapple chunks, kiwi slices, and orange wedges, topped with a drizzle of honey and fresh mint leaves. The fruit glistens under soft natural light, making it look refreshing and healthy.
+
+"Classic Margherita pizza": A close-up of a crispy, golden-brown pizza crust topped with fresh mozzarella cheese, ripe tomatoes, basil leaves, and a drizzle of olive oil. The melted cheese bubbles on top, and the red, green, and white colors create a visually stunning dish.
+
+"Decadent chocolate cake slice": A moist and rich slice of chocolate cake with smooth chocolate ganache, topped with a few raspberries and a dusting of powdered sugar. The layers inside are perfect and tempting, ready to melt in your mouth.
+
+"Sushi platter with assorted rolls": A neatly arranged sushi platter with various sushi rolls, including California rolls, spicy tuna, and salmon nigiri, garnished with wasabi, pickled ginger, and edible flowers. The vibrant colors of the sushi contrast against the white plate.
+
+"Comforting bowl of ramen": A steaming bowl of ramen noodles in a rich broth, topped with tender slices of pork, soft-boiled eggs, green onions, and a sprinkle of sesame seeds. The bowl radiates warmth and comfort, with steam gently rising from it.
+
+"Colorful summer salad": A bowl filled with fresh greens, cherry tomatoes, cucumbers, avocados, and crumbled feta cheese, topped with a balsamic glaze. The bright colors of the vegetables make the salad look both healthy and inviting.
+
+"Refreshing tropical cocktail": A vibrant, ice-cold tropical cocktail served in a tall glass with a mix of pineapple, mango, and coconut, garnished with a pineapple slice and a cocktail umbrella. The drink looks like the perfect refreshment for a sunny day by the beach.
+
+"Hearty breakfast spread": A plate piled high with scrambled eggs, crispy bacon, golden pancakes with syrup, buttered toast, and fresh fruit. A glass of orange juice completes the meal, ready for a perfect start to the day.
+
+"Bowl of creamy mashed potatoes": A perfectly whipped bowl of mashed potatoes topped with a pat of butter, sprinkled with chives, and served with a side of gravy. The smooth texture of the mashed potatoes is comforting and indulgent.
+
+"Gourmet burger with all the toppings": A juicy, perfectly grilled beef patty stacked with melted cheese, crisp lettuce, juicy tomato, pickles, and a dollop of sauce. The burger is served on a soft, golden bun, with golden fries on the side.
+
+"Grilled seafood platter": A platter featuring an assortment of grilled seafood like shrimp, scallops, and lobster tails, all garnished with lemon wedges and a sprinkle of herbs. The seafood is perfectly charred, adding flavor and texture.
+
+"Freshly baked croissants": A basket of buttery, flaky croissants fresh out of the oven, with their golden crust and soft, airy center. The pastries are arranged on a rustic napkin, ready to be enjoyed with a cup of coffee.
+
+"Vegetable stir-fry with rice": A vibrant stir-fry of mixed vegetables like bell peppers, broccoli, carrots, and snap peas, tossed in a savory sauce and served with fluffy white rice. The colors of the vegetables pop against the rice, creating an appetizing dish.
+
+"Delicious taco platter": A plate of soft corn tortillas filled with seasoned ground beef, shredded lettuce, diced tomatoes, cheese, and sour cream, served with a side of guacamole and salsa. The vibrant toppings make the tacos look fresh and tasty.
+
+"Sweet berry cheesecake": A slice of creamy cheesecake topped with a medley of fresh berries like strawberries, blueberries, and raspberries. The creamy filling contrasts with the tangy berries, and the golden graham cracker crust adds texture.
+
+"Classic spaghetti with marinara sauce": A heaping plate of spaghetti noodles twirled into a perfect mound, topped with rich marinara sauce, fresh basil, and a sprinkle of parmesan cheese. The dish is garnished with a side of garlic bread, making it a classic, comforting meal.
