@@ -18,7 +18,7 @@
                 echo "<a class='nav-link ' href='../php/booknow.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>BOOKNOW</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-                echo "<a class='nav-link ' href='#' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>Orders</a>";
+                echo "<a class='nav-link ' href='#' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>ORDERS</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
                 echo "<a class='nav-link ' href='../php/contact.php' style='color: darkgoldenrod;font-family: 'Times New Roman', Times,serif'>CONTACT</a>";
