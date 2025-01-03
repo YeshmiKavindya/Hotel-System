@@ -22,7 +22,15 @@
         </div>
       </nav> 
 
+    
+
+    <div class="footer">
+      <footer>
+        <p>@2024. All rights reserved.</p>
+      </footer>
       
+    </div>
+
 
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 
