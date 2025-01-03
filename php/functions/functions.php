@@ -82,7 +82,7 @@ function showDetailsRestaurant($connect){
 
 function foodDetails($connect){
 
-    $sql = "SELECT file_path FROM images where description like '%food%'";
+    $sql = "SELECT file_path FROM images WHERE DESCRIPTION like '%food%'";
     $result = mysqli_query($connect,$sql);
 
     $numrecords = mysqli_num_rows($result);
@@ -125,6 +125,8 @@ function foodDetails($connect){
             echo "<br>";
         }
     }
+
+       
 }
 
 ?>
