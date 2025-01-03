@@ -97,8 +97,8 @@ function foodDetails($connect){
             <img src='$filepath' class='card-img-top' alt='...' style='margin:1px;padding:10px;'>
             <div class='card-body'>
                 <h5 class='card-title'>Card title</h5>
-                <p class='card-text' >Heights Bistro is a versatile restaurant management system designed to optimize operations and enhance customer satisfaction. From seamless order management and staff scheduling to real-time inventory tracking and billing, Heights Bistro ensures smooth workflow and improved service. Perfect for restaurants looking to elevate their efficiency, it provides insightful reports and centralized control, helping restaurant owners and managers deliver an exceptional dining experience while maximizing profitability.</p>
-                <a href='#' class='btn btn-primary'>Go somewhere</a>
+                <p class='card-text' >Heights Bistro offers a delectable menu featuring fresh, flavorful dishes crafted with locally sourced ingredients. From savory appetizers to satisfying mains and indulgent desserts, each item is designed to provide a memorable dining experience.</p>
+                <input type='submit' value='Add to cart' name='submit' class='btn btn-warning' >
             </div>
             </div>";
 

@@ -8,7 +8,12 @@
 </head>
 <body>
 <style>
-
+.body {
+    background: gold;
+    margin: 1em;
+    
+    padding: 14px 16px;
+  }
 .card {
             width: 25rem;
             margin: 1em;
