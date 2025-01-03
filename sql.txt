@@ -6,11 +6,3 @@ create database hotelsystem;
 exit;
 mysql -h 127.0.0.0 -P 3306 -u root -p hotelsystem < hotelsystem.sql
 
-<div class="row">
-  <?php
-    require_once 'functions/functions.php';
-    require_once 'functions/dbconf.php';
-
-    foodDetails($connect);
-  ?>
-</div>
