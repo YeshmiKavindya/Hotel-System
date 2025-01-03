@@ -13,13 +13,13 @@
             width: 25rem;
             margin: 1em;
             padding: 3px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scale and shadow */
-        }
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
 
-        /* Card hover effect */
+        
         .card:hover {
-            transform: scale(1.1);  /* Increase size when hovered */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+            transform: scale(1.04);  
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
         }
 
         .logo {
