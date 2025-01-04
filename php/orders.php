@@ -23,7 +23,12 @@
       </nav> 
 
 
-      
+        <div><?php
+          require_once 'functions/functions.php';
+
+          getImage($connect);
+
+        ?></div>
 
 
 

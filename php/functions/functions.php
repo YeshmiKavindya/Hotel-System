@@ -128,9 +128,9 @@ function foodDetails($connect){
 }
 
 
-function getImage(){
+function getImage($connect){
 
-    require_once '..functions/dbconf.php';
+    // require_once 'functions/dbconf.php';
 
     $sql = "SELECT food_name,description,price,category,stock_quantity,image_url FROM food_items ";
     $result = mysqli_query($connect,$sql);
@@ -140,8 +140,16 @@ function getImage(){
     for ($i=0; $i < $numrecords ; $i++) { 
         
         $row = mysqli_fetch_assoc($result);
+        $food_name = $row['food_name'];
+        $description = $row['description'];
+        $price = $row['price'];
+        $category = $row['category'];
+        $stock = $row['stock_quantity'];
+        $img = $row['image_url'];
 
-        
+
+        echo "$food_name"."<br>";
+
 
     }
 
