@@ -201,6 +201,7 @@
     >
       
       <div class="booking_form">
+      
       <center><label for="formTitle" class="formTitle"><h4>Rooms Reservation Form</h4></label></center>
         <br>
         <br>
