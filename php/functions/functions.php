@@ -125,8 +125,26 @@ function foodDetails($connect){
             echo "<br>";
         }
     }
+}
 
-       
+
+function getImage(){
+
+    require_once '..functions/dbconf.php';
+
+    $sql = "SELECT food_name,description,price,category,stock_quantity,image_url FROM food_items ";
+    $result = mysqli_query($connect,$sql);
+
+    $numrecords = mysqli_num_rows($result);
+
+    for ($i=0; $i < $numrecords ; $i++) { 
+        
+        $row = mysqli_fetch_assoc($result);
+
+        
+
+    }
+
 }
 
 ?>
