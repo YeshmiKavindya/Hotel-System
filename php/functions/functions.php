@@ -80,55 +80,8 @@ function showDetailsRestaurant($connect){
 }   
 }
 
-function foodDetails($connect){
 
-    $sql = "SELECT file_path FROM images WHERE DESCRIPTION like '%food%'";
-    $result = mysqli_query($connect,$sql);
-
-    $numrecords = mysqli_num_rows($result);
-    $foods = array(
-    "Grilled Chicken Caesar Salad",
-    "Margarita Pizza",
-    "Beef Tenderloin Steak",
-    "Vegetable Stir-Fry",
-    "Shrimp Scampi Pasta",
-    "Marinated Grilled Salmon",
-    "Chicken Parmesan",
-    "Spaghetti Bolognese",
-    "Classic Cheeseburger",
-    "Vegan Buddha Bowl",
-    "Fish Tacos",
-    "Caprese Salad",
-    "Eggplant Parmesan",
-    "BBQ Pulled Pork Sandwich",
-    "Creamy Tomato Basil Soup",
-    "Chocolate Lava Cake"
-);
-    // echo "$numrecords";
-
-    for ($i=0;$i<$numrecords;$i++){
-
-        $data = mysqli_fetch_assoc($result);
-        foreach($data as $filepath){
-            echo "<div class='card' style='width: 25rem; margin:1em;padding:3px;'>
-            <img src='$filepath' class='card-img-top' alt='...' style='margin:1px;padding:10px;'>
-            <div class='card-body'>
-                <h5 class='card-title'>$foods[$i]</h5>
-                <p class='card-text' >Heights Bistro offers a delectable menu featuring fresh, flavorful dishes crafted with locally sourced ingredients. From savory appetizers to satisfying mains and indulgent desserts, each item is designed to provide a memorable dining experience.</p>
-                <input type='submit' value='Add to cart' name='submit' class='btn btn-warning' >
-            </div>
-            </div>";
-
-         }
-
-        if($i%3 == 0){
-            echo "<br>";
-        }
-    }
-}
-
-
-function getImage($connect){
+function getFoodDetails($connect){
 
     // require_once 'functions/dbconf.php';
 
@@ -147,8 +100,21 @@ function getImage($connect){
         $stock = $row['stock_quantity'];
         $img = $row['image_url'];
 
+        echo "<div class='card' style='width: 25rem; margin:1em;padding:3px;'>
+            <img src='$img' class='card-img-top' alt='...' style='margin:1px;padding:15px;'>
+            <center>
+            <div class='card-body'>
+                <h5 class='card-title'>$food_name</h5>
+                <p class='card-text' >$description</p>
+                <p class='card-text'>Price : $$price</p>
+                <input type='submit' value='Add to cart' name='submit' class='btn btn-warning' >
+            </div>
+            </center>
+            </div>";
 
-        echo "$food_name"."<br>";
+        if ($i%3 == 0) {
+            echo "<br>";
+        }
 
 
     }

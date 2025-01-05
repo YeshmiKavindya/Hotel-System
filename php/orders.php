@@ -23,10 +23,10 @@
       </nav> 
 
 
-        <div><?php
+        <div class="row"><?php
           require_once 'functions/functions.php';
 
-          getImage($connect);
+          getFoodDetails($connect);
 
         ?></div>
 
