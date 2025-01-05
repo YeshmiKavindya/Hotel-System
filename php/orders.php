@@ -23,7 +23,7 @@
       </nav> 
 
 
-        <div class="row"><?php
+        <div class="row" style="padding: 35px;"><?php
           require_once 'functions/functions.php';
 
           getFoodDetails($connect);
