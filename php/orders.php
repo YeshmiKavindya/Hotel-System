@@ -25,7 +25,7 @@
 
         <div class="row" style="padding: 35px;"><?php
           require_once 'functions/functions.php';
-
+          cartTable();
           getFoodDetails($connect);
 
         ?></div>

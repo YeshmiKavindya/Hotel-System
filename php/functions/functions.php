@@ -121,4 +121,17 @@ function getFoodDetails($connect){
 
 }
 
+    function cartTable(){
+
+        echo "<table>
+        <thead>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th> 
+        </thead>
+        
+        </table>";
+    }
+
 ?>
