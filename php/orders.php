@@ -23,6 +23,19 @@
         </div>
       </nav> 
 
+      <div class="row" style="margin:1em;padding:1em;">
+        <table border="2">
+          <thead>
+            <th>Order No</th>
+            <th>Name</th>
+            <th>Item Price</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </thead>
+        </table>
+
+      </div>
+
 
       <div class="row" style="padding: 35px;">
         <?php

@@ -1,7 +1,6 @@
 .body {
     background: gold;
     margin: 1em;
-    
     padding: 14px 16px;
   }
   .main_bar {
@@ -65,4 +64,9 @@
 
 .listitems{
     font-size: 14pt;
+}
+
+table{
+  padding: 1em;
+  margin: 1em;
 }
