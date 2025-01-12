@@ -41,13 +41,61 @@
         <?php
          
           require_once 'functions/functions.php';
-          // cartTable();
-          getFoodDetails($connect);
+          $sql = "SELECT id,food_name,description,price,category,stock_quantity,image_url FROM food_items ";
+          $result = mysqli_query($connect,$sql);
+          $numrecords = mysqli_num_rows($result);
 
+          for ($i=0; $i < $numrecords ; $i++) { 
+              
+              $row = mysqli_fetch_assoc($result);
+
+              $id = $row['id'];
+              $food_name = $row['food_name'];
+              $description = $row['description'];
+              $price = $row['price'];
+              $category = $row['category'];
+              $stock = $row['stock_quantity'];
+              $img = $row['image_url'];
+
+              echo "<div class='card' style='width: 25rem; margin:1em;padding:3px;'>
+                  <img src='$img' class='card-img-top' alt='...' style='margin:1px;padding:15px;'>
+                  <center>
+                  <div class='card-body'>
+                      <h5 class='card-title'>$id</h5>
+                      <h5 class='card-title'>$food_name</h5>
+                      <p class='card-text' >$description</p>
+                      <p class='card-text'>Price : $$price</p>
+                      <form method='GET' action=''>
+                        <input type='submit' value='Add to cart' name='submit' class='btn btn-warning' >
+                      </form>
+                  </div>
+                  </center>
+                  </div>";
+
+              if ($i%3 == 0) {
+                  echo "<br>";
+              }
+
+          }
         ?>
-      </div>
+    </div>
+
+      <?php
+
+        if (isset($_GET['submit'])){
+
+          $orderid = $id;
+          echo $orderid;
 
 
+
+          
+        }else{
+
+        }
+      
+      
+      ?>
 
     
 
