@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
     <!-- <add navbar> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;">
         <div class="container-fluid">
@@ -24,7 +25,8 @@
 
 
         <div class="row" style="padding: 35px;"><?php
-          require_once 'functions/functions.php';
+         
+         require_once 'functions/functions.php';
           cartTable();
           getFoodDetails($connect);
 
