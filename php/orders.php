@@ -11,7 +11,7 @@
 
 
     <!-- <add navbar> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;">
         <div class="container-fluid">
          
           <?php
@@ -24,13 +24,15 @@
       </nav> 
 
 
-        <div class="row" style="padding: 35px;"><?php
+      <div class="row" style="padding: 35px;">
+        <?php
          
-         require_once 'functions/functions.php';
-          cartTable();
+          require_once 'functions/functions.php';
+          // cartTable();
           getFoodDetails($connect);
 
-        ?></div>
+        ?>
+      </div>
 
 
 
