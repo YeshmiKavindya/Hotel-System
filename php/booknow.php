@@ -155,7 +155,7 @@
                 id="room"
                 name="type[]"
                 value="Room_Reservation"
-                required
+                
               />
               <label class="form-check-label" for="roomreservation"
                 >Room Reservation</label
@@ -225,9 +225,8 @@
 
         $address = $address1.$address2;
        
-
-        $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ($fname,$lname,$email,$phoneno,$address)";
-
+        $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ('$fname','$lname','$email','$phoneno','$address')";
+        $result = mysqli_query($connect,$sql);
 
         
 
