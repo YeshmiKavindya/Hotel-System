@@ -207,34 +207,37 @@
             />
           </div>
         </div>
-</form>
+        <div>
+        <?php
+
+          if(isset($_POST['submit'])){
+            $fname = $_POST['fname'];
+            $lname = $_POST['lname'];
+            $email = $_POST['email'];
+            $phoneno = $_POST['phoneno'];
+            $address1 = $_POST['address1'];
+            $address2 = $_POST['address2'];
+            $restype = $_POST['type'];
+
+            $address = $address1.$address2;
+          
+            $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ('$fname','$lname','$email','$phoneno','$address')";
+            $result = mysqli_query($connect,$sql);
+
+            if(!empty($restype[0])){
+              include '../forms/roomsreservation.php';
+            }
+
+          }
+
+          ?>
+    
+   
+
+        </div>
+      </form>
       </div>
     </div>
-
-
-    <?php
-    
-      if(isset($_POST['submit'])){
-        $fname = $_POST['fname'];
-        $lname = $_POST['lname'];
-        $email = $_POST['email'];
-        $phoneno = $_POST['phoneno'];
-        $address1 = $_POST['address1'];
-        $address2 = $_POST['address2'];
-        $restype = $_POST['type'];
-
-        $address = $address1.$address2;
-       
-        $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ('$fname','$lname','$email','$phoneno','$address')";
-        $result = mysqli_query($connect,$sql);
-
-        
-
-
-
-      }
-    
-    ?>
 
 
 
