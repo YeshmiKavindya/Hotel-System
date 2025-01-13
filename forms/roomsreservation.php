@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rooms Reservation</title>
-    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../css/bookingforms.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div
-      class="content text-and text-bg-secondary p-3 bg-opacity-50 bg-body-tertiary"
-    >
-      
-      <div class="booking_form">
+<div >
+  <br><br>
       <center><label for="formTitle" class="formTitle"><h4>Rooms Reservation Form</h4></label></center>
         <br>
         <br>
@@ -158,8 +145,4 @@
            
           </div>
       </div>
-    </div>
-
-    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    
