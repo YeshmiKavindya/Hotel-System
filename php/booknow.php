@@ -232,7 +232,7 @@
             $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ('$fname','$lname','$email','$phoneno','$address')";
             $result = mysqli_query($connect,$sql);
 
-            if(sizeof($restype)>0){
+            if(sizeof($restype) == 1){
               foreach($restype as $key){
                 if($key == 'Room_Reservation'){
                   echo "<script>
@@ -252,6 +252,10 @@
                     window.open('../forms/weddinghallreservation.php', '_blank');  
                 </script>";
                 }
+              }
+            }
+            if(sizeof($restype)>1){
+              foreach($restype as $key){
                 if($key == 'Weddinghall_Reservation' && $key == 'Room_Reservation'){
                   echo "<script>
                     document.getElementById('bookingform').reset();
@@ -266,12 +270,8 @@
                 }
               }
             }
-            // else{
-            //   echo "<script>
-            //   alert("Select a type")
-            //   </script>";
-              
-            // }
+               
+
           }
 
           
