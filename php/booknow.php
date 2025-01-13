@@ -22,7 +22,6 @@
     .content{
       height: auto;
       width: 80%;
-      font-color:black;
       justify-self: center;
       margin-top:3rem ;
       padding-bottom: 5rem;
@@ -59,7 +58,7 @@
       }
       label{
         color:black;
-        weight:bold;
+        font-weight:bold;
       }
     </style>
   </head>
