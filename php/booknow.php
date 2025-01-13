@@ -28,11 +28,19 @@
     </nav>
 
     <!--Booking Form-->
+    <?php
+    echo "<script>
+      document.getElementById('bookingform').reset();
+    </script>";
+ 
+    
+    ?>
+   
     <div
       class="content text-and text-bg-secondary p-3 bg-opacity-50 bg-body-tertiary"
     >
       <div class="booking_form">
-        <form method ="POST" action="">
+        <form method ="POST" action="" id="bookingform">
         <div>
           <label for="formGroupExampleInput" class="form-label">Name : </label>
           <div class="row">
@@ -224,11 +232,14 @@
             $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ('$fname','$lname','$email','$phoneno','$address')";
             $result = mysqli_query($connect,$sql);
 
-            if(!empty($restype[0])){
-              include '../forms/roomsreservation.php';
+            if(!empty($restype[0]))
+              echo "<a href='../forms/roomsreservation.php'>";
+            }
+            if(!empty($restype[1])) {
+              
             }
 
-          }
+          
 
           ?>
     
