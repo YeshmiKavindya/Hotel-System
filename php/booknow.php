@@ -31,6 +31,7 @@
       class="content text-and text-bg-secondary p-3 bg-opacity-50 bg-body-tertiary"
     >
       <div class="booking_form">
+        <form method ="POST" action="">
         <div>
           <label for="formGroupExampleInput" class="form-label">Name : </label>
           <div class="row">
@@ -40,6 +41,7 @@
                 class="form-control"
                 placeholder="First name"
                 aria-label="First name"
+                name="fname"
                 id="fname"
               />
             </div>
@@ -49,6 +51,7 @@
                 class="form-control"
                 placeholder="Last name"
                 aria-label="Last name"
+                name="lname"
                 id="lname"
               />
             </div>
@@ -64,6 +67,7 @@
                 class="form-control"
                 placeholder="Email"
                 aria-label="First name"
+                name="email"
                 id="email"
               />
             </div>
@@ -76,6 +80,7 @@
                 class="form-control"
                 placeholder="PhoneNumber"
                 aria-label="Last name"
+                name="phoneno"
                 id="phoneno"
               />
             </div>
@@ -91,6 +96,7 @@
                 class="form-control"
                 placeholder="1234 Main strt"
                 aria-label="First name"
+                name="address1"
                 id="address1"
               />
             </div>
@@ -103,6 +109,7 @@
                 class="form-control"
                 placeholder="Apartment,studio or floor"
                 aria-label="Last name"
+                name="address2"
                 id="address2"
               />
             </div>
@@ -139,6 +146,7 @@
                 class="form-check-input"
                 type="checkbox"
                 id="room"
+                name="type[]"
                 value="Room_Reservation"
               />
               <label class="form-check-label" for="roomreservation"
@@ -150,6 +158,7 @@
                 class="form-check-input"
                 type="checkbox"
                 id="restaurant"
+                name="type[]"
                 value="Restaurant_Reservation"
               />
               <label class="form-check-label" for="restaurant"
@@ -161,6 +170,7 @@
                 class="form-check-input"
                 type="checkbox"
                 id="weddinghall"
+                name="type[]"
                 value="Weddinghall_Reservation"
               />
               <label class="form-check-label" for="Weddinghall"
@@ -171,6 +181,7 @@
               <input
                 class="form-check-input"
                 type="checkbox"
+                name="type[]"
                 id="swimmingpool"
                 value="Swimmingpool_Reservation"
               />
@@ -188,10 +199,22 @@
             />
           </div>
         </div>
+</form>
       </div>
     </div>
 
+
+    <?php
+    
+      if(isset($_POST['submit'])){
+        
+      }
+    
+    ?>
+
+
+
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/book.js"></script>
+    <!-- <script src="../js/book.js"></script> -->
   </body>
 </html>
