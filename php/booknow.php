@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bookstyle.css" />
   </head>
   <body>
+    <?php require_once 'functions/dbconf.php';?>
     
 <!--navigation bar-->
     <nav
@@ -222,7 +223,12 @@
         $address2 = $_POST['address2'];
         $restype = $_POST['type'];
 
-        $sql = "INSERT INTO customers (FirstName)"
+        $address = $address1.$address2;
+       
+
+        $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ($fname,$lname,$email,$phoneno,$address)";
+
+
         
 
 
