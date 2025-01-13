@@ -241,11 +241,16 @@
                 </script>";
                 }
                 if($key == 'Restaurant_Reservation'){
-                  echo "<a href='../forms/restaurantreservation.php'>";
-                  echo "restaurnt";
+                  echo "<script>
+                    document.getElementById('bookingform').reset();
+                    window.open('../forms/restaurantreservation.php', '_blank');  
+                </script>";
                 }
                 if($key == 'Weddinghall_Reservation'){
-                  echo "<a href='../forms/weddinghallreservation.php'>";
+                  echo "<script>
+                    document.getElementById('bookingform').reset();
+                    window.open('../forms/weddinghallreservation.php', '_blank');  
+                </script>";
                 }
               }
             }
