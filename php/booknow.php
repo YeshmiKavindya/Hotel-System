@@ -222,7 +222,10 @@
         $address2 = $_POST['address2'];
         $restype = $_POST['type'];
 
-        print_r($restype);
+        $sql = "INSERT INTO customers (FirstName)"
+        
+
+
 
       }
     
