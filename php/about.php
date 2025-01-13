@@ -90,7 +90,7 @@
                 Each room features luxurious bedding, free Wi-Fi, flat-screen TVs, and stunning city or garden views.
                  For an elevated experience, our suites offer additional space, private balconies, 
                 and exclusive access to our VIP services.</p>
-              <a href="#" class="btn btn-primary" style="justify-content: center;">Book Now</a>
+              <a href="booknow.php" class="btn btn-primary" style="justify-content: center;">Book Now</a>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@
                 where our chefs use fresh, locally sourced ingredients to craft seasonal menus inspired by global and local flavors. 
                 Our Skyline Lounge offers a rooftop setting with panoramic views,
                  perfect for sunset cocktails or an evening to unwind.</p>
-              <a href="#" class="btn btn-primary" style="justify-content: center;">Reserve</a>
+              <a href="booknow.php"" class="btn btn-primary" style="justify-content: center;">Reserve</a>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
 
               <p class="card-text">Ideal for weddings, conferences, and gatherings,
                  our versatile event spaces are equipped with modern AV technology and personalized event planning services.</p>
-              <a href="#" class="btn btn-primary" style="justify-content: center;">Book Now</a>
+              <a href="booknow.php" class="btn btn-primary" style="justify-content: center;">Book Now</a>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
               <h5 class="card-title" style="text-align: center;">Swimming Pool</h5>
               <img src="../images/61.jpg" class="img-fluid" alt="...">
               <p class="card-text">Enjoy our outdoor pool, surrounded by lush gardens for a peaceful escape within the hotel.</p>
-              <a href="#" class="btn btn-primary" style="justify-content: center;">Enjoy</a>
+              <a href="booknow.php" class="btn btn-primary" style="justify-content: center;">Enjoy</a>
             </div>
           </div>
         </div>
