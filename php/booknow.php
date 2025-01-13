@@ -43,6 +43,7 @@
                 aria-label="First name"
                 name="fname"
                 id="fname"
+                required
               />
             </div>
             <div class="col">
@@ -53,6 +54,7 @@
                 aria-label="Last name"
                 name="lname"
                 id="lname"
+                required
               />
             </div>
           </div>
@@ -69,6 +71,7 @@
                 aria-label="First name"
                 name="email"
                 id="email"
+                required
               />
             </div>
             <div class="col">
@@ -82,6 +85,7 @@
                 aria-label="Last name"
                 name="phoneno"
                 id="phoneno"
+                required
               />
             </div>
           </div>
@@ -98,6 +102,7 @@
                 aria-label="First name"
                 name="address1"
                 id="address1"
+                required
               />
             </div>
             <div class="col">
@@ -111,6 +116,7 @@
                 aria-label="Last name"
                 name="address2"
                 id="address2"
+                required
               />
             </div>
           </div>
@@ -148,6 +154,7 @@
                 id="room"
                 name="type[]"
                 value="Room_Reservation"
+                required
               />
               <label class="form-check-label" for="roomreservation"
                 >Room Reservation</label
@@ -207,7 +214,16 @@
     <?php
     
       if(isset($_POST['submit'])){
-        
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+        $phoneno = $_POST['phoneno'];
+        $address1 = $_POST['address1'];
+        $address2 = $_POST['address2'];
+        $restype = $_POST['type'];
+
+        print_r($restype);
+
       }
     
     ?>
