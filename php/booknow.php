@@ -232,12 +232,30 @@
             $sql = "INSERT INTO customers (FirstName,LastName,Email,PhoneNumber,Address) VALUES ('$fname','$lname','$email','$phoneno','$address')";
             $result = mysqli_query($connect,$sql);
 
-            if(!empty($restype[0]))
-              echo "<a href='../forms/roomsreservation.php'>";
+            if(sizeof($restype)>0){
+              foreach($restype as $key){
+                if($key == 'Room_Reservation'){
+                  echo "<script>
+                    document.getElementById('bookingform').reset();
+                    window.open('../forms/roomsreservation.php', '_blank');  
+                </script>";
+                }
+                if($key == 'Restaurant_Reservation'){
+                  echo "<a href='../forms/restaurantreservation.php'>";
+                  echo "restaurnt";
+                }
+                if($key == 'Weddinghall_Reservation'){
+                  echo "<a href='../forms/weddinghallreservation.php'>";
+                }
+              }
             }
-            if(!empty($restype[1])) {
+            // else{
+            //   echo "<script>
+            //   alert("Select a type")
+            //   </script>";
               
-            }
+            // }
+          }
 
           
 
