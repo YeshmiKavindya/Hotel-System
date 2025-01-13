@@ -61,11 +61,12 @@
                   <img src='$img' class='card-img-top' alt='...' style='margin:1px;padding:15px;'>
                   <center>
                   <div class='card-body'>
+                  <form method='GET' action=''>
                       <h5 class='card-title'>$id</h5>
                       <h5 class='card-title'>$food_name</h5>
                       <p class='card-text' >$description</p>
                       <p class='card-text'>Price : $$price</p>
-                      <form method='GET' action=''>
+                      
                         <input type='submit' value='Add to cart' name='submit' class='btn btn-warning' >
                       </form>
                   </div>
