@@ -9,56 +9,13 @@
 </head>
 <body>
     <div class="row">
-        <div class="col-3">
-            <table>
-               
-                    <tr><td>Profile</td></tr>
-                    <tr><td>Rooms Reservation</td></tr> 
-                    <tr><td>Restaurant Reservation</td></tr>
-                    <tr><td>Wedding Hall Reservation</td></tr>
-            </table>
-        </div>
-        <div class="col">
-            <center><h4 class="tHead">YARROW HEIGHTS HOTEL</h4></center>
-            <div class="row">
-                <div class="col">
-                    <br>
-                    <h5>Rooms Reservation</h5>
-                    <?php require_once 'functions/functions.php';
-                        
-                            showDetailsRooms($connect);
-                        ?>
-                    <br>
-        <form action="">
-            <div class="d-grid gap-2 col-4 mx-auto">
-                <input type="submit" value="Add Reservation" class="form-control">
-            </div>
+        <div class="col-4">
 
-        </form>
-                    
-                </div>
-                <div class="col">
-                    <br>
-                    <h5>Restaurant Reservation</h5>
-                    <?php 
-                    
-                    require_once 'functions/functions.php';
-                    
-                    
-                    showDetailsRestaurant($connect);
-                    ?>
-                    <br>
-                   
-        <form action="">
-            <div class="d-grid gap-2 col-4 mx-auto">
-                <input type="submit" value="Add Reservations" class="form-control">
-            </div>
-
-        </form>
-                </div>
-            </div>
         </div>
+        <div class="col-8"></div>
+
     </div>
+
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
