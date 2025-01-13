@@ -1,22 +1,74 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Book Now</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../css/bookstyle.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+      body{
+      background-image:url('../images/61.jpg') ;
+      background-size: cover;
+      position: relative;
+      height: auto;
+      background-repeat: no-repeat;
+
+    }
+    div h5{
+      text-align: center;
+      color: black;
+    }
+    .content{
+      height: auto;
+      width: 80%;
+      font-color:black;
+      justify-self: center;
+      margin-top:3rem ;
+      padding-bottom: 5rem;
+      margin-bottom: 5rem;
+    }
+    .form-label{
+      color: black;
+      font-weight: bold;
+    }
+    .card{
+      height: 40px;
+
+    }
+    .navbar a {
+        display: block;
+        color: black;
+        justify-items: right;
+        font-weight: 900;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .logo {
+        width: 80px;
+        height: 50px;
+      }
+      .nav_bar {
+        width: 100%;
+        height: 30px;
+      }
+      .main_bar {
+        width: 100%;
+        height: 80px;
+      }
+      label{
+        color:black;
+        weight:bold;
+      }
+    </style>
   </head>
-  <body>
+  <body >
     <?php require_once 'functions/dbconf.php';?>
     
 <!--navigation bar-->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light"
-      style="background-color: black"
-    >
-      <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;">
+<div class="container-fluid">
         
         <?php
            require_once 'functions/navbar.php';
