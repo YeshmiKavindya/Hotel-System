@@ -252,6 +252,18 @@
                     window.open('../forms/weddinghallreservation.php', '_blank');  
                 </script>";
                 }
+                if($key == 'Weddinghall_Reservation' && $key == 'Room_Reservation'){
+                  echo "<script>
+                    document.getElementById('bookingform').reset();
+                    window.open('../forms/roomsandhallreservation.php', '_blank');  
+                </script>";
+                }
+                if($key == 'Restaurant_Reservation' && $key == 'Room_Reservation'){
+                  echo "<script>
+                    document.getElementById('bookingform').reset();
+                    window.open('../forms/roomsandrestaurant.php', '_blank');  
+                </script>";
+                }
               }
             }
             // else{
