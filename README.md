@@ -1,1 +1,1 @@
-# Hotel-System
+Our Hotel Managment System website offers an efficient and user-friendly platform for managing hotel operations. It enables easy booking,room management,restaurant management,guest check-ins and check-outs,billing and reporting.Design to streamline hotel management tasks, it enhances the overall guest experience and improves operational efficiency for staff.
