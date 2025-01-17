@@ -18,7 +18,7 @@
                     <br>
                     <div >
                         <label for="username">Username</label>
-                        <input type="email" class="form-control" name="username" placeholder="Enter your email" required/>
+                        <input type="text" class="form-control" name="username" placeholder="Enter your email" required/>
                     </div>
                     <br>
                     <div>
@@ -49,14 +49,15 @@
                 $name = $_POST['username'];
                 $password = $_POST['password'];
 
-                $sql="SELECT password FROM customers WHERE name='$name'";
+                $sql="SELECT * FROM users WHERE Username='$name'";
 
                 $result = mysqli_query($connect,$sql);
 
                 $row = mysqli_fetch_assoc($result);
-                $hash = $row['password'];
+                $hash = $row['PasswordHash'];
 
                 if(password_verify($password,$hash)){
+                    
                     echo "<script>
                             document.getElementById('loginForm').reset();
                             window.open('../php/dashboard.php', '_blank');  
