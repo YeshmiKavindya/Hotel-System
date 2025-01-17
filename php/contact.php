@@ -24,7 +24,7 @@
 </nav>
 
 <!--Contact Form-->
-<form action="<?php echo $_SERVER['PHP_SELF']; ?> " method="post">
+<form action="" method="POST">
   <div class="content text-and text-bg-secondary p-3 bg-opacity-50 bg-body-tertiary">
     <div class="mb-3">
       <h5>Contact Us</h5>
@@ -40,7 +40,8 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter message here" name="message"></textarea>
     </div>	
     <div class="d-grid gap-2 col-6 mx-auto">
-      <input class="form-control" type="submit" value="Send Message" name="submit' style="background-color:lightgoldenrodyellow;font: bold;color: black;border: 1em;">
+    <input class="form-control" type="submit" value="Send Message" name="submit" style="background-color:lightgoldenrodyellow; font: bold; color: black; border: 1em;">
+
     </div>
   </div>
 </form>
@@ -61,18 +62,18 @@
 
 
   try {
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    
         
       if(isset($_POST['submit'])){
           $name = $_POST['name'];
           $email = $_POST['email'];
           $message = $_POST['message'];
 
-          $sql = "INSERT INTO contactdetails (FullName, Email, Message) VALUES ($name,$email,$message)";
+          $sql = "INSERT INTO contactdetails (FullName, Email, Message) VALUES ('$name','$email','$message')";
           $result = mysqli_query($connect,$sql);
 
       }
-    }
+    
   } catch (Exception $e) {
     
   }
